@@ -1,0 +1,31 @@
+//
+//  Notes.txt
+//  SetGraph
+//
+//  Created by Janvi Arora on 25/08/24.
+//
+
+------------------------------------------------------------------------------
+
+To make tableView cell's height dynamic:
+
+e.g.
+
+class ABC: UIViewController {
+    private lazy var tableView: UITableView {
+        let tv = UITableView()
+        return tv
+    }
+}
+class WorkoutListCell: UITableViewCell
+
+Step 1: Make sure all the constraits are present for every UIElement used inside WorkoutListCell.
+
+Step 2: tv.estimatedRowHeight = 44    // Default, but you have to set
+
+Step 3: tv.rowHeight = UITableView.automaticDimension
+
+Step 4: if lables are used inside WorkoutListCell, then set their numberOfLines property 0.
+
+------------------------------------------------------------------------------
+

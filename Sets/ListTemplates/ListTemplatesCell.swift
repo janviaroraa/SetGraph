@@ -43,8 +43,8 @@ class ListTemplatesCell: UICollectionViewCell {
         ])
     }
 
-    func configure() {
-        titleLabel.text = "Starting Strength: Workout A"
-        descLabel.text = "Squat, Bench, Press, Deadlift"
+    func configure(title: String?, exercises: String?) {
+        titleLabel.text = title
+        descLabel.text = exercises
     }
 }

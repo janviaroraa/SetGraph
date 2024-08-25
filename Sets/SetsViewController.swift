@@ -9,6 +9,10 @@ import UIKit
 
 class SetsViewController: SGViewController {
 
+    private var viewModal: SetsViewModal?
+    private var exerciseListData: [ExerciseList]?
+    private var listTemplatesData: [ListTemplate]?
+
     private let exerciseListsLabel = SGTitleLabel(textColor: .label, fontSize: 24, textAlignment: .left)
     private let templatesLabel = SGTitleLabel(textColor: .label, fontSize: 24, textAlignment: .left)
     private let buildListsView = SGListBuildingView()
@@ -37,9 +41,7 @@ class SetsViewController: SGViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureUIComponents()
-        addViews()
-        layoutConstraints()
+        registerViewModal()
     }
 
     override func configureNavBar() {
@@ -56,6 +58,13 @@ class SetsViewController: SGViewController {
         templatesLabel.font = UIFont.boldSystemFont(ofSize: 24)
 
         buildListsView.backgroundColor = .secondarySystemBackground
+    }
+
+    private func registerViewModal() {
+        viewModal = SetsViewModal()
+        viewModal?.delegate = self
+        viewModal?.fetchExerciseListsData()
+        viewModal?.fetchListTemplatesData()
     }
 
     override func addViews() {
@@ -90,47 +99,61 @@ class SetsViewController: SGViewController {
 
     @objc
     private func settingsButtonTap() {
-        print("Settings")
+        let vc = SettingsViewController()
+        let navVC = UINavigationController(rootViewController: vc)
+        present(navVC, animated: true)
     }
 }
 
 extension SetsViewController: UITableViewDataSource {
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         3
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: ExerciseListsCell.identifier, for: indexPath) as? ExerciseListsCell else { fatalError() }
-        cell.configure()
+        cell.configure(imageName: exerciseListData?[indexPath.row].image, title: exerciseListData?[indexPath.row].title)
         return cell
     }
 }
 
 extension SetsViewController: UITableViewDelegate {
+
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        guard let selectedList = exerciseListData?[indexPath.row] else { return }
+        let vc = ExerciseDetailViewController(exerciseList: selectedList)
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
 
 extension SetsViewController: UICollectionViewDataSource {
+
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         4
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ListTemplatesCell.identifier, for: indexPath) as? ListTemplatesCell else { fatalError() }
-        cell.configure()
+        cell.configure(title: listTemplatesData?[indexPath.row].title, exercises: listTemplatesData?[indexPath.row].exercises)
         return cell
     }
 }
 
 extension SetsViewController: UICollectionViewDelegate {
+
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
+        guard let selectedTemplate = listTemplatesData?[indexPath.row] else { return }
+        let vc = TemplateDetailViewController(listTemplate: selectedTemplate)
+        let navVC = UINavigationController(rootViewController: vc)
+        present(navVC, animated: true)
     }
 }
 
 extension SetsViewController: UICollectionViewDelegateFlowLayout {
+
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let screenWidth = view.frame.size.width
         let cellWidth = (screenWidth/2) - 25
@@ -143,5 +166,18 @@ extension SetsViewController: UICollectionViewDelegateFlowLayout {
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         10
+    }
+}
+
+extension SetsViewController: SetsDelegate {
+    
+    func didFetchExerciseList(_ data: [ExerciseList]) {
+        exerciseListData = data
+        tableView.reloadData()
+    }
+
+    func didFetchListTemplate(_ data: [ListTemplate]) {
+        listTemplatesData = data
+        collectionView.reloadData()
     }
 }

@@ -31,4 +31,8 @@ enum Localized {
     static let buildLists = "BUILDING YOUR LISTS"
     static let organizeWorkout = "Organize by Workout"
     static let organizeWorkoutDesc = "Organize common list structures to build your personalized tracking setup."
+
+    // ListTemplate
+    static let addList = "Add List"
+    static let addExercise = "Add Exercise"
 }

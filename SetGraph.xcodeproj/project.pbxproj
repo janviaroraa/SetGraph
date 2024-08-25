@@ -28,9 +28,22 @@
 		126AEA222C79B697001A8565 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126AEA212C79B697001A8565 /* WelcomeView.swift */; };
 		126AEA242C79C370001A8565 /* ExerciseListsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126AEA232C79C370001A8565 /* ExerciseListsCell.swift */; };
 		126AEA272C79CB5F001A8565 /* ExerciseLists.json in Sources */ = {isa = PBXBuildFile; fileRef = 126AEA262C79CB5F001A8565 /* ExerciseLists.json */; };
-		126AEA2A2C79D40A001A8565 /* ExerciseListsModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126AEA292C79D40A001A8565 /* ExerciseListsModal.swift */; };
+		126AEA2A2C79D40A001A8565 /* ExerciseListModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126AEA292C79D40A001A8565 /* ExerciseListModal.swift */; };
 		126AEA2C2C79D73F001A8565 /* ListTemplatesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126AEA2B2C79D73F001A8565 /* ListTemplatesCell.swift */; };
 		126AEA2E2C79DB5A001A8565 /* SGListBuildingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126AEA2D2C79DB5A001A8565 /* SGListBuildingView.swift */; };
+		126AEA3F2C79F89A001A8565 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126AEA3E2C79F89A001A8565 /* NetworkManager.swift */; };
+		126AEA402C79FA90001A8565 /* ExerciseLists.json in Resources */ = {isa = PBXBuildFile; fileRef = 126AEA262C79CB5F001A8565 /* ExerciseLists.json */; };
+		126AEA422C7A04D6001A8565 /* SetsViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126AEA412C7A04D6001A8565 /* SetsViewModal.swift */; };
+		126AEA442C7A0C7A001A8565 /* ListTemplates.json in Sources */ = {isa = PBXBuildFile; fileRef = 126AEA432C7A0C7A001A8565 /* ListTemplates.json */; };
+		126AEA462C7A0DBE001A8565 /* ListTemplateModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126AEA452C7A0DBE001A8565 /* ListTemplateModal.swift */; };
+		126AEA472C7A0FF3001A8565 /* ListTemplates.json in Resources */ = {isa = PBXBuildFile; fileRef = 126AEA432C7A0C7A001A8565 /* ListTemplates.json */; };
+		126AEA4C2C7A243F001A8565 /* TemplateDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126AEA4B2C7A243F001A8565 /* TemplateDetailViewController.swift */; };
+		126AEA4E2C7AB305001A8565 /* WorkoutListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126AEA4D2C7AB305001A8565 /* WorkoutListCell.swift */; };
+		12CEA9182C7ABE0400256006 /* SettingsOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CEA9172C7ABE0400256006 /* SettingsOptions.swift */; };
+		12CEA9222C7AE27F00256006 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CEA9212C7AE27F00256006 /* SettingsViewController.swift */; };
+		12CEA9242C7AE3CD00256006 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CEA9232C7AE3CD00256006 /* SettingsView.swift */; };
+		12CEA9272C7AE6BF00256006 /* ExerciseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CEA9262C7AE6BF00256006 /* ExerciseDetailViewController.swift */; };
+		12CEA92A2C7B165D00256006 /* Notes.txt in Sources */ = {isa = PBXBuildFile; fileRef = 12CEA9292C7B165D00256006 /* Notes.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,9 +88,20 @@
 		126AEA212C79B697001A8565 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		126AEA232C79C370001A8565 /* ExerciseListsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseListsCell.swift; sourceTree = "<group>"; };
 		126AEA262C79CB5F001A8565 /* ExerciseLists.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ExerciseLists.json; sourceTree = "<group>"; };
-		126AEA292C79D40A001A8565 /* ExerciseListsModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseListsModal.swift; sourceTree = "<group>"; };
+		126AEA292C79D40A001A8565 /* ExerciseListModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseListModal.swift; sourceTree = "<group>"; };
 		126AEA2B2C79D73F001A8565 /* ListTemplatesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTemplatesCell.swift; sourceTree = "<group>"; };
 		126AEA2D2C79DB5A001A8565 /* SGListBuildingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGListBuildingView.swift; sourceTree = "<group>"; };
+		126AEA3E2C79F89A001A8565 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		126AEA412C7A04D6001A8565 /* SetsViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetsViewModal.swift; sourceTree = "<group>"; };
+		126AEA432C7A0C7A001A8565 /* ListTemplates.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ListTemplates.json; sourceTree = "<group>"; };
+		126AEA452C7A0DBE001A8565 /* ListTemplateModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTemplateModal.swift; sourceTree = "<group>"; };
+		126AEA4B2C7A243F001A8565 /* TemplateDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateDetailViewController.swift; sourceTree = "<group>"; };
+		126AEA4D2C7AB305001A8565 /* WorkoutListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutListCell.swift; sourceTree = "<group>"; };
+		12CEA9172C7ABE0400256006 /* SettingsOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsOptions.swift; sourceTree = "<group>"; };
+		12CEA9212C7AE27F00256006 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		12CEA9232C7AE3CD00256006 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		12CEA9262C7AE6BF00256006 /* ExerciseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailViewController.swift; sourceTree = "<group>"; };
+		12CEA9292C7B165D00256006 /* Notes.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Notes.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -139,6 +163,7 @@
 		126AE9B62C799FE9001A8565 = {
 			isa = PBXGroup;
 			children = (
+				12CEA9282C7B165400256006 /* Notes */,
 				126AEA252C79CB45001A8565 /* JSON */,
 				126AE9F72C79A2E5001A8565 /* Resources */,
 				126AEA162C79ACE8001A8565 /* Localization */,
@@ -153,6 +178,7 @@
 				126AE9FB2C79A3A8001A8565 /* Sets */,
 				126AE9FC2C79A3AD001A8565 /* Sessions */,
 				126AE9FD2C79A3B3001A8565 /* Today */,
+				126AEA3A2C79F5FA001A8565 /* Settings */,
 				126AE9C12C799FE9001A8565 /* SetGraph */,
 				126AE9DB2C799FEC001A8565 /* SetGraphTests */,
 				126AE9E52C799FEC001A8565 /* SetGraphUITests */,
@@ -193,9 +219,11 @@
 			isa = PBXGroup;
 			children = (
 				126AE9FE2C79A3E1001A8565 /* SetsViewController.swift */,
-				126AEA232C79C370001A8565 /* ExerciseListsCell.swift */,
-				126AEA2B2C79D73F001A8565 /* ListTemplatesCell.swift */,
-				126AEA292C79D40A001A8565 /* ExerciseListsModal.swift */,
+				126AEA412C7A04D6001A8565 /* SetsViewModal.swift */,
+				126AEA482C7A1068001A8565 /* ExerciseLists */,
+				12CEA9252C7AE6B900256006 /* ExerciseDetail */,
+				126AEA492C7A1083001A8565 /* ListTemplates */,
+				126AEA4A2C7A2428001A8565 /* TemplateDetail */,
 			);
 			path = Sets;
 			sourceTree = "<group>";
@@ -254,6 +282,7 @@
 		126AEA0A2C79A80D001A8565 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				126AEA3E2C79F89A001A8565 /* NetworkManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -296,8 +325,62 @@
 			isa = PBXGroup;
 			children = (
 				126AEA262C79CB5F001A8565 /* ExerciseLists.json */,
+				126AEA432C7A0C7A001A8565 /* ListTemplates.json */,
 			);
 			path = JSON;
+			sourceTree = "<group>";
+		};
+		126AEA3A2C79F5FA001A8565 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				12CEA9212C7AE27F00256006 /* SettingsViewController.swift */,
+				12CEA9232C7AE3CD00256006 /* SettingsView.swift */,
+				12CEA9172C7ABE0400256006 /* SettingsOptions.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		126AEA482C7A1068001A8565 /* ExerciseLists */ = {
+			isa = PBXGroup;
+			children = (
+				126AEA232C79C370001A8565 /* ExerciseListsCell.swift */,
+				126AEA292C79D40A001A8565 /* ExerciseListModal.swift */,
+			);
+			path = ExerciseLists;
+			sourceTree = "<group>";
+		};
+		126AEA492C7A1083001A8565 /* ListTemplates */ = {
+			isa = PBXGroup;
+			children = (
+				126AEA2B2C79D73F001A8565 /* ListTemplatesCell.swift */,
+				126AEA452C7A0DBE001A8565 /* ListTemplateModal.swift */,
+			);
+			path = ListTemplates;
+			sourceTree = "<group>";
+		};
+		126AEA4A2C7A2428001A8565 /* TemplateDetail */ = {
+			isa = PBXGroup;
+			children = (
+				126AEA4B2C7A243F001A8565 /* TemplateDetailViewController.swift */,
+				126AEA4D2C7AB305001A8565 /* WorkoutListCell.swift */,
+			);
+			path = TemplateDetail;
+			sourceTree = "<group>";
+		};
+		12CEA9252C7AE6B900256006 /* ExerciseDetail */ = {
+			isa = PBXGroup;
+			children = (
+				12CEA9262C7AE6BF00256006 /* ExerciseDetailViewController.swift */,
+			);
+			path = ExerciseDetail;
+			sourceTree = "<group>";
+		};
+		12CEA9282C7B165400256006 /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				12CEA9292C7B165D00256006 /* Notes.txt */,
+			);
+			path = Notes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -420,6 +503,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				126AEA472C7A0FF3001A8565 /* ListTemplates.json in Resources */,
+				126AEA402C79FA90001A8565 /* ExerciseLists.json in Resources */,
 				126AE9CF2C799FEB001A8565 /* Assets.xcassets in Resources */,
 				126AE9D22C799FEB001A8565 /* Base in Resources */,
 			);
@@ -448,11 +533,14 @@
 			files = (
 				126AEA0F2C79A887001A8565 /* SGViewController.swift in Sources */,
 				126AEA0D2C79A854001A8565 /* WelcomeViewController.swift in Sources */,
-				126AEA2A2C79D40A001A8565 /* ExerciseListsModal.swift in Sources */,
+				126AEA2A2C79D40A001A8565 /* ExerciseListModal.swift in Sources */,
 				126AEA1B2C79AE14001A8565 /* UIView+Ext.swift in Sources */,
 				126AEA1D2C79B311001A8565 /* WelcomeViewItem.swift in Sources */,
 				126AEA242C79C370001A8565 /* ExerciseListsCell.swift in Sources */,
+				126AEA4C2C7A243F001A8565 /* TemplateDetailViewController.swift in Sources */,
 				126AEA182C79ACF4001A8565 /* Localization.swift in Sources */,
+				12CEA9272C7AE6BF00256006 /* ExerciseDetailViewController.swift in Sources */,
+				12CEA9182C7ABE0400256006 /* SettingsOptions.swift in Sources */,
 				126AEA152C79AAE0001A8565 /* SGButton.swift in Sources */,
 				126AEA112C79A92B001A8565 /* SGTitleLabel.swift in Sources */,
 				126AEA2C2C79D73F001A8565 /* ListTemplatesCell.swift in Sources */,
@@ -463,10 +551,18 @@
 				126AE9C32C799FE9001A8565 /* AppDelegate.swift in Sources */,
 				126AEA032C79A3F5001A8565 /* TodayViewController.swift in Sources */,
 				126AE9C52C799FE9001A8565 /* SceneDelegate.swift in Sources */,
+				12CEA9222C7AE27F00256006 /* SettingsViewController.swift in Sources */,
 				126AEA132C79A932001A8565 /* SGBodyLabel.swift in Sources */,
+				126AEA422C7A04D6001A8565 /* SetsViewModal.swift in Sources */,
 				126AEA222C79B697001A8565 /* WelcomeView.swift in Sources */,
 				126AEA012C79A3ED001A8565 /* SessionViewController.swift in Sources */,
+				12CEA9242C7AE3CD00256006 /* SettingsView.swift in Sources */,
+				126AEA4E2C7AB305001A8565 /* WorkoutListCell.swift in Sources */,
 				126AEA1F2C79B3D6001A8565 /* SGImageView.swift in Sources */,
+				12CEA92A2C7B165D00256006 /* Notes.txt in Sources */,
+				126AEA462C7A0DBE001A8565 /* ListTemplateModal.swift in Sources */,
+				126AEA442C7A0C7A001A8565 /* ListTemplates.json in Sources */,
+				126AEA3F2C79F89A001A8565 /* NetworkManager.swift in Sources */,
 				126AEA062C79A5E3001A8565 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

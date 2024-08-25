@@ -1,0 +1,117 @@
+{
+    "results": [
+        {
+            "title": "Starting Strength: Workout A",
+            "desc": "This plan is an example of Phase 1 for the Starting Strength program which is intended for beginners. \nVariations of this plan with multiple phases can be found online. \nPhase 1: This initial phase will last for 1 to 3 weeks. \nDuring this period, most participants will see significant increases in their squat and deadlift weights. Once these exercises become too demanding to perform in every workout, it will be time to transition to a new plan. \n\nWorkout Schedule: \n- Alternate between Workout A and Workout B, resting at least one day between each workout session. \nProgression: The general progression is an increment of 5 pounds per workout, or about 7.5-15 pounds per week.",
+            "exercises": "Squat, Bench Press, Deadlift",
+            "workouts": [
+                {
+                    "exercise": "Squat",
+                    "set": "3x5 reps",
+                    "restTime": "Rest: 3-5 mins between sets"
+                },
+                {
+                    "exercise": "Bench Press",
+                    "set": "3x5 reps",
+                    "restTime": "Rest: 3-5 mins between sets"
+                },
+                {
+                    "exercise": "Deadlift",
+                    "set": "1x5 reps",
+                    "restTime": ""
+                }
+            ]
+        },
+        {
+            "title": "Starting Strength: Workout B",
+            "desc": "Progression: \nFollow the same progression scheme as Workout A. \n\nWarm-up: \nPerform 2-3 warm-up sets with lighter weights.",
+            "exercises": "Squat, Overhead Press, Deadlift",
+            "workouts": [
+                {
+                    "exercise": "Squat",
+                    "set": "3x5 reps",
+                    "restTime": "Rest: 3-5 mins between sets"
+                },
+                {
+                    "exercise": "Overhead Press",
+                    "set": "3x5 reps",
+                    "restTime": "Rest: 3-5 mins between sets"
+                },
+                {
+                    "exercise": "Deadlift",
+                    "set": "1x5 reps",
+                    "restTime": ""
+                }
+            ]
+        },
+        {
+            "title": "Upper Body Hypertrophy",
+            "desc": "This list targets the upper body muscles, including the chest, back, shoulders, biceps, and triceps, with the goal of achieving hypertrophy (muscle growth). \nWorkout Schedule: Perform the upper and lower body workouts on consecutive days, followed by two rest days before repeating the cycle. \nRest: 1-2 minutes between sets.",
+            "exercises": "Incline Bench Press, Seated Cable Row, Dumbbell Chest Fly, Dumbbell Row, Dumbbell Lateral Raises, Dumbbell Curl",
+            "workouts": [
+                {
+                    "exercise": "Incline Bench Press",
+                    "set": "3x8-12 reps",
+                    "restTime": "Progression: Increase weight by 5-10 lbs every 1-2 weeks"
+                },
+                {
+                    "exercise": "Seated Cable Row",
+                    "set": "3x10-12 reps",
+                    "restTime": "Progression: Increase weight by 5-10 lbs every 1-2 weeks"
+                },
+                {
+                    "exercise": "Dumbbell Chest Fly",
+                    "set": "3x10-12 reps",
+                    "restTime": "Progression: Increase weight by 5-10 lbs every 1-2 weeks"
+                },
+                {
+                    "exercise": "Dumbbell Row",
+                    "set": "3x8-12 reps",
+                    "restTime": "Progression: Increase weight by 5-10 lbs every 1-2 weeks"
+                },
+                {
+                    "exercise": "Dumbbell Lateral Raises",
+                    "set": "3x10-12 reps",
+                    "restTime": "Progression: Increase weight by 2.5 lbs every 1-2 weeks"
+                },
+                {
+                    "exercise": "Dumbbell Curl",
+                    "set": "3x8-12 reps",
+                    "restTime": "Progression: Increase weight by 2.5 lbs every 1-2 weeks"
+                }
+            ]
+        },
+        {
+            "title": "Lower Body Hypertrophy",
+            "desc": "This list targets the lower body muscles, including the quads, hamstrings, glutes, and calves with the goal of achieving hypertrophy (muscle growth). \nWorkout Schedule: Perform the upper and lower body workouts on consecutive days, followed by two rest days before repeating the cycle. \nRest: 1-2 minutes between sets. \nProgression: Increase weight by 5-10lbs every \n1-2 weeks.",
+            "exercises": "Barbell Lunge, Leg Press, Leg Extension, Leg Curl, Calf Raise",
+            "workouts": [
+                {
+                    "exercise": "Barbell Lunge",
+                    "set": "3x8-12 reps",
+                    "restTime": ""
+                },
+                {
+                    "exercise": "Leg Press",
+                    "set": "3x10-12 reps",
+                    "restTime": ""
+                },
+                {
+                    "exercise": "Leg Extension",
+                    "set": "3x8-12 reps",
+                    "restTime": ""
+                },
+                {
+                    "exercise": "Leg Curl",
+                    "set": "3x8-12 reps",
+                    "restTime": ""
+                },
+                {
+                    "exercise": "Calf Raise",
+                    "set": "3x10-12 reps",
+                    "restTime": ""
+                }
+            ]
+        }
+    ]
+}

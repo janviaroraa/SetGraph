@@ -11,7 +11,7 @@ class SGViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemBackground
+        view.backgroundColor = .black
         configureNavBar()
         addViews()
         layoutConstraints()

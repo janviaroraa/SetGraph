@@ -9,7 +9,7 @@ import UIKit
 
 class SGButton: UIButton {
 
-    convenience init(color: UIColor, title: String, imageName: String) {
+    convenience init(color: UIColor, title: String, imageName: String? = nil) {
         self.init(frame: .zero)
         set(color: color, title: title, imageName: imageName)
     }
@@ -29,13 +29,15 @@ class SGButton: UIButton {
         configuration?.cornerStyle = .medium
     }
 
-    private func set(color: UIColor, title: String, imageName: String) {
+    private func set(color: UIColor, title: String, imageName: String? = nil) {
         configuration?.baseBackgroundColor = color
         configuration?.baseForegroundColor = .black
         configuration?.title = title
 
         configuration?.imagePlacement = .leading
-        configuration?.image = UIImage(systemName: imageName)
+        if let imageName {
+            configuration?.image = UIImage(systemName: imageName)
+        }
         configuration?.imagePadding = 6
     }
 }

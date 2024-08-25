@@ -24,4 +24,20 @@ struct Image {
 
     static let settings = "gear"
     static let calendar = "calendar"
+    static let add = "plus"
+    static let overflowMenu = "ellipsis.circle"
+}
+
+struct SettingsImages {
+    static let pro = "crown"
+    static let account = "person.circle"
+    static let smartPlates = "square.dashed.inset.filled"
+    static let unit = "scalemass"
+    static let integrations = "heart.text.square.fill"
+    static let shortcuts = "square.2.layers.3d.top.filled"
+    static let theme = "paintpalette"
+    static let workoutReminders = "calendar"
+    static let defaultIntersetRest = "timer"
+    static let helpAndFeedback = "questionmark.circle"
+    static let versionHistory = "info.circle"
 }

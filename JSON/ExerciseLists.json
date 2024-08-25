@@ -2,15 +2,123 @@
     "results" : [
         {
             "image": "plus",
-            "title": "New List..."
+            "title": "New List...",
+            "desc": "",
+            "workouts": []
         },
         {
             "image": "dumbbell",
-            "title": "My Exercises"
+            "title": "My Exercises",
+            "desc": "",
+            "workouts": [
+                {
+                    "exercise": "Leg Extension",
+                    "set": "",
+                    "restTime": ""
+                },
+                {
+                    "exercise": "Leg Press",
+                    "set": "",
+                    "restTime": ""
+                },
+                {
+                    "exercise": "Push-Up",
+                    "set": "",
+                    "restTime": ""
+                },
+                {
+                    "exercise": "Lat Pulldown",
+                    "set": "",
+                    "restTime": ""
+                },
+                {
+                    "exercise": "Crunches",
+                    "set": "",
+                    "restTime": ""
+                },
+                {
+                    "exercise": "Hammer Curls",
+                    "set": "",
+                    "restTime": ""
+                },
+                {
+                    "exercise": "Squat",
+                    "set": "",
+                    "restTime": ""
+                },
+                {
+                    "exercise": "Barbell Curl",
+                    "set": "",
+                    "restTime": ""
+                },
+                {
+                    "exercise": "Bench Curl",
+                    "set": "",
+                    "restTime": ""
+                },
+                {
+                    "exercise": "Sit Ups",
+                    "set": "",
+                    "restTime": ""
+                },
+                {
+                    "exercise": "Barbell Military Press",
+                    "set": "",
+                    "restTime": ""
+                },
+                {
+                    "exercise": "Pull-Up",
+                    "set": "",
+                    "restTime": ""
+                },
+                {
+                    "exercise": "Deadlift",
+                    "set": "",
+                    "restTime": ""
+                },
+                {
+                    "exercise": "Pull Ups",
+                    "set": "",
+                    "restTime": ""
+                }
+            ]
         },
         {
             "image": "list.clipboard",
-            "title": "Arnold's Golden Six"
+            "title": "Arnold's Golden Six",
+            "desc": "Arnold's Golden Six is a classis, full-body workout routine designed to build strenght and muscle mass using fundamental compund exercises. \n\nWeigh Increments: \nIncrease weights by 2.5-5% weekly if all reps and sets are completed with proper form. \nIf targets are not met, do not increase weight; instead, focus on achieving the target reps with the current weight. \nEvery fourth week, reduce the load by 10-15% to facilitate recovery.",
+            "workouts": [
+                {
+                    "exercise": "Squat",
+                    "set": "4x10 reps",
+                    "restTime": ""
+                },
+                {
+                    "exercise": "Bench Press",
+                    "set": "3x10 reps",
+                    "restTime": ""
+                },
+                {
+                    "exercise": "Pull Ups",
+                    "set": "3xmax reps",
+                    "restTime": ""
+                },
+                {
+                    "exercise": "Barbell Military Press",
+                    "set": "4x10 reps",
+                    "restTime": ""
+                },
+                {
+                    "exercise": "Barbell Curl",
+                    "set": "3x10 reps",
+                    "restTime": ""
+                },
+                {
+                    "exercise": "Crunches",
+                    "set": "3xmax reps",
+                    "restTime": ""
+                }
+            ]
         }
     ]
 }

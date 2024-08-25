@@ -43,9 +43,9 @@ class ExerciseListsCell: UITableViewCell {
         ])
     }
 
-    func configure() {
+    func configure(imageName: String?, title: String?) {
         itemImage.tintColor = .systemGreen
-        itemImage.image = UIImage(systemName: "gear")
-        itemTitle.text = "Label"
+        itemImage.image = UIImage(systemName: imageName ?? "")
+        itemTitle.text = title
     }
 }
