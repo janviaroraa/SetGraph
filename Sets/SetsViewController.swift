@@ -42,6 +42,7 @@ class SetsViewController: SGViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         registerViewModal()
+        buildListsView.delegate = self
     }
 
     override func configureNavBar() {
@@ -91,7 +92,7 @@ class SetsViewController: SGViewController {
             collectionView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -20),
             collectionView.heightAnchor.constraint(equalToConstant: 260),
 
-            buildListsView.topAnchor.constraint(equalTo: collectionView.bottomAnchor, constant: 10),
+            buildListsView.topAnchor.constraint(equalTo: collectionView.bottomAnchor),
             buildListsView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 20),
             buildListsView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -20),
         ])
@@ -108,7 +109,7 @@ class SetsViewController: SGViewController {
 extension SetsViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        3
+        exerciseListData?.count ?? 0
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -122,6 +123,14 @@ extension SetsViewController: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+
+        if indexPath.row == 0 {
+            let vc = NewListViewController()
+            let navVC = UINavigationController(rootViewController: vc)
+            present(navVC, animated: true)
+            return
+        }
+        
         guard let selectedList = exerciseListData?[indexPath.row] else { return }
         let vc = ExerciseDetailViewController(exerciseList: selectedList)
         navigationController?.pushViewController(vc, animated: true)
@@ -131,7 +140,7 @@ extension SetsViewController: UITableViewDelegate {
 extension SetsViewController: UICollectionViewDataSource {
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        4
+        listTemplatesData?.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -179,5 +188,14 @@ extension SetsViewController: SetsDelegate {
     func didFetchListTemplate(_ data: [ListTemplate]) {
         listTemplatesData = data
         collectionView.reloadData()
+    }
+}
+
+extension SetsViewController: SGListBuildingDelegate {
+
+    func didTapSGListBuildingView() {
+        let vc = OrganizeViewController()
+        let navVC = UINavigationController(rootViewController: vc)
+        present(navVC, animated: true)
     }
 }

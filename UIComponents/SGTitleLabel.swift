@@ -28,7 +28,6 @@ class SGTitleLabel: UILabel {
     private func configure() {
         translatesAutoresizingMaskIntoConstraints = false
         adjustsFontSizeToFitWidth = true
-        minimumScaleFactor = 0.5
         numberOfLines = 0
     }
 }

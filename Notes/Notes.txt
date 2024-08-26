@@ -8,6 +8,7 @@
 ------------------------------------------------------------------------------
 
 To make tableView cell's height dynamic:
+Related Link: https://www.youtube.com/watch?v=p3mM2lNF9ws
 
 e.g.
 
@@ -18,6 +19,8 @@ class ABC: UIViewController {
     }
 }
 class WorkoutListCell: UITableViewCell
+
+Solution:
 
 Step 1: Make sure all the constraits are present for every UIElement used inside WorkoutListCell.
 

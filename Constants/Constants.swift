@@ -25,7 +25,15 @@ struct Image {
     static let settings = "gear"
     static let calendar = "calendar"
     static let add = "plus"
-    static let overflowMenu = "ellipsis.circle"
+
+    static let newList = "list.clipboard.fill"
+    static let run = "figure.run"
+    static let upDown = "chevron.up.chevron.down"
+    static let startSession = "record.circle"
+    static let resume = "play.fill"
+    static let pause = "pause.fill"
+    static let cross = "xmark"
+    static let discard = "trash.fill"
 }
 
 struct SettingsImages {

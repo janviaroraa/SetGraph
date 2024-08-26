@@ -40,16 +40,19 @@ class ExerciseDetailViewController: SGViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = exerciseList.title
+        configureSearchController()
     }
 
     override func configureUIComponents() {
         workoutDesc.text = exerciseList.desc
         addExerciseButton.configuration?.baseForegroundColor = .systemGreen
+        workoutDesc.font = UIFont.systemFont(ofSize: 14)
     }
 
     override func configureNavBar() {
-        let overflowMenuButton = UIBarButtonItem(image: UIImage(systemName: Image.overflowMenu), style: .done, target: self, action: #selector(ctaOverflowMenu))
-        navigationItem.rightBarButtonItem = overflowMenuButton
+        guard let rightBarButton = exerciseList.rightBarButton else { return }
+        let rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: rightBarButton), style: .done, target: self, action: #selector(ctaOverflowMenu))
+        navigationItem.rightBarButtonItem = rightBarButtonItem
     }
 
     override func addViews() {
@@ -72,6 +75,13 @@ class ExerciseDetailViewController: SGViewController {
             addExerciseButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -20),
             addExerciseButton.heightAnchor.constraint(equalToConstant: 50),
         ])
+    }
+
+    private func configureSearchController() {
+        let searchController = UISearchController()
+        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.searchBar.placeholder = "Search"
+        navigationItem.searchController = searchController
     }
 
     @objc

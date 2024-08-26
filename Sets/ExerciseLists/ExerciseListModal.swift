@@ -15,5 +15,6 @@ struct ExerciseList: Codable {
     let image: String?
     let title: String?
     let desc: String?
+    let rightBarButton: String?
     let workouts: [Workout]
 }

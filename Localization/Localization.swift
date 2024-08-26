@@ -35,4 +35,32 @@ enum Localized {
     // ListTemplate
     static let addList = "Add List"
     static let addExercise = "Add Exercise"
+
+    // New List
+    static let name = "NAME"
+    static let description = "DESCRIPTION"
+    static let organizeBy = "Organize by workout, muscle group, day of the week, etc."
+    static let namePlaceholder = "Lower Body, Monday, Triceps..."
+    static let descPlaceholder = "Set a description or plan."
+
+    // Empty Session
+    static let emptySessionTitle = "No Sessions"
+    static let emptySessionDesc = "Add sessions to track the duration of your activities."
+    static let all = "All"
+    static let newSession = "New Session"
+    static let running = "Running"
+    static let startSession = "Start Now"
+    static let finishSession = "Finish Session"
+    static let manualEntry = "Manual Entry"
+    static let style = "Style"
+    static let duration = "Duration"
+    static let viewing = "Viewing"
+    static let hoursMins = "HOUR:MIN"
+    static let hoursMinsSecs = "HOUR:MIN:SEC"
+    static let discard = "Discard"
+    static let initialTime = "00:00:00"
+
+    // Organize By
+    static let organizeViewControllerTitle = "Organize by"
+    static let organizeVCDesc = "Explore common list structures to build your customized tracking setup."
 }

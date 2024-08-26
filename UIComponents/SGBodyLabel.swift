@@ -26,10 +26,12 @@ class SGBodyLabel: UILabel {
 
     private func configure() {
         translatesAutoresizingMaskIntoConstraints = false
-        adjustsFontSizeToFitWidth = true
-        font = UIFont.preferredFont(forTextStyle: .body)
+        font = UIFont.systemFont(ofSize: 14)
         numberOfLines = 0
         lineBreakMode = .byTruncatingTail
+        
+//        minimumScaleFactor = 0.6
+//        adjustsFontSizeToFitWidth = true
     }
 }
 

@@ -44,6 +44,16 @@
 		12CEA9242C7AE3CD00256006 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CEA9232C7AE3CD00256006 /* SettingsView.swift */; };
 		12CEA9272C7AE6BF00256006 /* ExerciseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CEA9262C7AE6BF00256006 /* ExerciseDetailViewController.swift */; };
 		12CEA92A2C7B165D00256006 /* Notes.txt in Sources */ = {isa = PBXBuildFile; fileRef = 12CEA9292C7B165D00256006 /* Notes.txt */; };
+		12CEA92D2C7B274C00256006 /* NewListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CEA92C2C7B274C00256006 /* NewListViewController.swift */; };
+		12CEA92F2C7B2C3700256006 /* SGTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CEA92E2C7B2C3700256006 /* SGTextField.swift */; };
+		12CEA9312C7B4F7700256006 /* SessionLeftBarButtonItemOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CEA9302C7B4F7700256006 /* SessionLeftBarButtonItemOptions.swift */; };
+		12CEA9332C7B58EE00256006 /* OngoingSessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CEA9322C7B58EE00256006 /* OngoingSessionView.swift */; };
+		12CEA9372C7C63EF00256006 /* OrganizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CEA9362C7C63EF00256006 /* OrganizeViewController.swift */; };
+		12CEA9392C7C679200256006 /* OrganizeTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CEA9382C7C679200256006 /* OrganizeTableView.swift */; };
+		12CEA93B2C7C787B00256006 /* OrganizedWorkouts.json in Sources */ = {isa = PBXBuildFile; fileRef = 12CEA93A2C7C787B00256006 /* OrganizedWorkouts.json */; };
+		12CEA93D2C7C7CFB00256006 /* OrganizeViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CEA93C2C7C7CFB00256006 /* OrganizeViewModal.swift */; };
+		12CEA93F2C7C7D6400256006 /* OrganizeWorkoutsModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CEA93E2C7C7D6400256006 /* OrganizeWorkoutsModal.swift */; };
+		12CEA9402C7C7DB000256006 /* OrganizedWorkouts.json in Resources */ = {isa = PBXBuildFile; fileRef = 12CEA93A2C7C787B00256006 /* OrganizedWorkouts.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +112,15 @@
 		12CEA9232C7AE3CD00256006 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		12CEA9262C7AE6BF00256006 /* ExerciseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailViewController.swift; sourceTree = "<group>"; };
 		12CEA9292C7B165D00256006 /* Notes.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Notes.txt; sourceTree = "<group>"; };
+		12CEA92C2C7B274C00256006 /* NewListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewListViewController.swift; sourceTree = "<group>"; };
+		12CEA92E2C7B2C3700256006 /* SGTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGTextField.swift; sourceTree = "<group>"; };
+		12CEA9302C7B4F7700256006 /* SessionLeftBarButtonItemOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionLeftBarButtonItemOptions.swift; sourceTree = "<group>"; };
+		12CEA9322C7B58EE00256006 /* OngoingSessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OngoingSessionView.swift; sourceTree = "<group>"; };
+		12CEA9362C7C63EF00256006 /* OrganizeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizeViewController.swift; sourceTree = "<group>"; };
+		12CEA9382C7C679200256006 /* OrganizeTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizeTableView.swift; sourceTree = "<group>"; };
+		12CEA93A2C7C787B00256006 /* OrganizedWorkouts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = OrganizedWorkouts.json; sourceTree = "<group>"; };
+		12CEA93C2C7C7CFB00256006 /* OrganizeViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizeViewModal.swift; sourceTree = "<group>"; };
+		12CEA93E2C7C7D6400256006 /* OrganizeWorkoutsModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizeWorkoutsModal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -176,6 +195,7 @@
 				126AE9F82C79A2FC001A8565 /* TabBar */,
 				126AEA0B2C79A846001A8565 /* Onboarding */,
 				126AE9FB2C79A3A8001A8565 /* Sets */,
+				12CEA9342C7C63D400256006 /* Organize */,
 				126AE9FC2C79A3AD001A8565 /* Sessions */,
 				126AE9FD2C79A3B3001A8565 /* Today */,
 				126AEA3A2C79F5FA001A8565 /* Settings */,
@@ -220,6 +240,7 @@
 			children = (
 				126AE9FE2C79A3E1001A8565 /* SetsViewController.swift */,
 				126AEA412C7A04D6001A8565 /* SetsViewModal.swift */,
+				12CEA92B2C7B273800256006 /* NewList */,
 				126AEA482C7A1068001A8565 /* ExerciseLists */,
 				12CEA9252C7AE6B900256006 /* ExerciseDetail */,
 				126AEA492C7A1083001A8565 /* ListTemplates */,
@@ -232,6 +253,8 @@
 			isa = PBXGroup;
 			children = (
 				126AEA002C79A3ED001A8565 /* SessionViewController.swift */,
+				12CEA9322C7B58EE00256006 /* OngoingSessionView.swift */,
+				12CEA9302C7B4F7700256006 /* SessionLeftBarButtonItemOptions.swift */,
 			);
 			path = Sessions;
 			sourceTree = "<group>";
@@ -256,7 +279,6 @@
 			isa = PBXGroup;
 			children = (
 				126AEA0E2C79A887001A8565 /* SGViewController.swift */,
-				126AEA2D2C79DB5A001A8565 /* SGListBuildingView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -268,6 +290,7 @@
 				126AEA122C79A932001A8565 /* SGBodyLabel.swift */,
 				126AEA142C79AAE0001A8565 /* SGButton.swift */,
 				126AEA1E2C79B3D6001A8565 /* SGImageView.swift */,
+				12CEA92E2C7B2C3700256006 /* SGTextField.swift */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -326,6 +349,7 @@
 			children = (
 				126AEA262C79CB5F001A8565 /* ExerciseLists.json */,
 				126AEA432C7A0C7A001A8565 /* ListTemplates.json */,
+				12CEA93A2C7C787B00256006 /* OrganizedWorkouts.json */,
 			);
 			path = JSON;
 			sourceTree = "<group>";
@@ -381,6 +405,26 @@
 				12CEA9292C7B165D00256006 /* Notes.txt */,
 			);
 			path = Notes;
+			sourceTree = "<group>";
+		};
+		12CEA92B2C7B273800256006 /* NewList */ = {
+			isa = PBXGroup;
+			children = (
+				12CEA92C2C7B274C00256006 /* NewListViewController.swift */,
+			);
+			path = NewList;
+			sourceTree = "<group>";
+		};
+		12CEA9342C7C63D400256006 /* Organize */ = {
+			isa = PBXGroup;
+			children = (
+				126AEA2D2C79DB5A001A8565 /* SGListBuildingView.swift */,
+				12CEA9362C7C63EF00256006 /* OrganizeViewController.swift */,
+				12CEA9382C7C679200256006 /* OrganizeTableView.swift */,
+				12CEA93C2C7C7CFB00256006 /* OrganizeViewModal.swift */,
+				12CEA93E2C7C7D6400256006 /* OrganizeWorkoutsModal.swift */,
+			);
+			path = Organize;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -503,6 +547,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12CEA9402C7C7DB000256006 /* OrganizedWorkouts.json in Resources */,
 				126AEA472C7A0FF3001A8565 /* ListTemplates.json in Resources */,
 				126AEA402C79FA90001A8565 /* ExerciseLists.json in Resources */,
 				126AE9CF2C799FEB001A8565 /* Assets.xcassets in Resources */,
@@ -531,6 +576,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12CEA9372C7C63EF00256006 /* OrganizeViewController.swift in Sources */,
 				126AEA0F2C79A887001A8565 /* SGViewController.swift in Sources */,
 				126AEA0D2C79A854001A8565 /* WelcomeViewController.swift in Sources */,
 				126AEA2A2C79D40A001A8565 /* ExerciseListModal.swift in Sources */,
@@ -538,6 +584,7 @@
 				126AEA1D2C79B311001A8565 /* WelcomeViewItem.swift in Sources */,
 				126AEA242C79C370001A8565 /* ExerciseListsCell.swift in Sources */,
 				126AEA4C2C7A243F001A8565 /* TemplateDetailViewController.swift in Sources */,
+				12CEA9332C7B58EE00256006 /* OngoingSessionView.swift in Sources */,
 				126AEA182C79ACF4001A8565 /* Localization.swift in Sources */,
 				12CEA9272C7AE6BF00256006 /* ExerciseDetailViewController.swift in Sources */,
 				12CEA9182C7ABE0400256006 /* SettingsOptions.swift in Sources */,
@@ -548,8 +595,10 @@
 				126AEA2E2C79DB5A001A8565 /* SGListBuildingView.swift in Sources */,
 				126AEA272C79CB5F001A8565 /* ExerciseLists.json in Sources */,
 				126AE9FA2C79A325001A8565 /* SGTabBarController.swift in Sources */,
+				12CEA92D2C7B274C00256006 /* NewListViewController.swift in Sources */,
 				126AE9C32C799FE9001A8565 /* AppDelegate.swift in Sources */,
 				126AEA032C79A3F5001A8565 /* TodayViewController.swift in Sources */,
+				12CEA93F2C7C7D6400256006 /* OrganizeWorkoutsModal.swift in Sources */,
 				126AE9C52C799FE9001A8565 /* SceneDelegate.swift in Sources */,
 				12CEA9222C7AE27F00256006 /* SettingsViewController.swift in Sources */,
 				126AEA132C79A932001A8565 /* SGBodyLabel.swift in Sources */,
@@ -557,11 +606,16 @@
 				126AEA222C79B697001A8565 /* WelcomeView.swift in Sources */,
 				126AEA012C79A3ED001A8565 /* SessionViewController.swift in Sources */,
 				12CEA9242C7AE3CD00256006 /* SettingsView.swift in Sources */,
+				12CEA9312C7B4F7700256006 /* SessionLeftBarButtonItemOptions.swift in Sources */,
 				126AEA4E2C7AB305001A8565 /* WorkoutListCell.swift in Sources */,
 				126AEA1F2C79B3D6001A8565 /* SGImageView.swift in Sources */,
 				12CEA92A2C7B165D00256006 /* Notes.txt in Sources */,
+				12CEA92F2C7B2C3700256006 /* SGTextField.swift in Sources */,
 				126AEA462C7A0DBE001A8565 /* ListTemplateModal.swift in Sources */,
+				12CEA93B2C7C787B00256006 /* OrganizedWorkouts.json in Sources */,
+				12CEA9392C7C679200256006 /* OrganizeTableView.swift in Sources */,
 				126AEA442C7A0C7A001A8565 /* ListTemplates.json in Sources */,
+				12CEA93D2C7C7CFB00256006 /* OrganizeViewModal.swift in Sources */,
 				126AEA3F2C79F89A001A8565 /* NetworkManager.swift in Sources */,
 				126AEA062C79A5E3001A8565 /* Constants.swift in Sources */,
 			);
