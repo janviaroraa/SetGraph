@@ -63,4 +63,8 @@ enum Localized {
     // Organize By
     static let organizeViewControllerTitle = "Organize by"
     static let organizeVCDesc = "Explore common list structures to build your customized tracking setup."
+    static let examples = "Examples"
+
+    // Workout Deatil
+    static let addToList = "Add to Lists"
 }

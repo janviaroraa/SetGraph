@@ -39,9 +39,7 @@
 		126AEA472C7A0FF3001A8565 /* ListTemplates.json in Resources */ = {isa = PBXBuildFile; fileRef = 126AEA432C7A0C7A001A8565 /* ListTemplates.json */; };
 		126AEA4C2C7A243F001A8565 /* TemplateDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126AEA4B2C7A243F001A8565 /* TemplateDetailViewController.swift */; };
 		126AEA4E2C7AB305001A8565 /* WorkoutListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126AEA4D2C7AB305001A8565 /* WorkoutListCell.swift */; };
-		12CEA9182C7ABE0400256006 /* SettingsOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CEA9172C7ABE0400256006 /* SettingsOptions.swift */; };
 		12CEA9222C7AE27F00256006 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CEA9212C7AE27F00256006 /* SettingsViewController.swift */; };
-		12CEA9242C7AE3CD00256006 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CEA9232C7AE3CD00256006 /* SettingsView.swift */; };
 		12CEA9272C7AE6BF00256006 /* ExerciseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CEA9262C7AE6BF00256006 /* ExerciseDetailViewController.swift */; };
 		12CEA92A2C7B165D00256006 /* Notes.txt in Sources */ = {isa = PBXBuildFile; fileRef = 12CEA9292C7B165D00256006 /* Notes.txt */; };
 		12CEA92D2C7B274C00256006 /* NewListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CEA92C2C7B274C00256006 /* NewListViewController.swift */; };
@@ -54,6 +52,12 @@
 		12CEA93D2C7C7CFB00256006 /* OrganizeViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CEA93C2C7C7CFB00256006 /* OrganizeViewModal.swift */; };
 		12CEA93F2C7C7D6400256006 /* OrganizeWorkoutsModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CEA93E2C7C7D6400256006 /* OrganizeWorkoutsModal.swift */; };
 		12CEA9402C7C7DB000256006 /* OrganizedWorkouts.json in Resources */ = {isa = PBXBuildFile; fileRef = 12CEA93A2C7C787B00256006 /* OrganizedWorkouts.json */; };
+		12CEA9422C7C896800256006 /* WorkoutDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CEA9412C7C896800256006 /* WorkoutDetailViewController.swift */; };
+		12CEA9462C7CA59C00256006 /* WorkoutDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CEA9452C7CA59C00256006 /* WorkoutDetailView.swift */; };
+		12CEA9482C7CB12900256006 /* Settings.json in Sources */ = {isa = PBXBuildFile; fileRef = 12CEA9472C7CB12900256006 /* Settings.json */; };
+		12CEA94A2C7CB33400256006 /* SettingsModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CEA9492C7CB33400256006 /* SettingsModal.swift */; };
+		12CEA94C2C7CB39700256006 /* SettingsViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CEA94B2C7CB39700256006 /* SettingsViewModal.swift */; };
+		12CEA94D2C7CB43100256006 /* Settings.json in Resources */ = {isa = PBXBuildFile; fileRef = 12CEA9472C7CB12900256006 /* Settings.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,9 +111,7 @@
 		126AEA452C7A0DBE001A8565 /* ListTemplateModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTemplateModal.swift; sourceTree = "<group>"; };
 		126AEA4B2C7A243F001A8565 /* TemplateDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateDetailViewController.swift; sourceTree = "<group>"; };
 		126AEA4D2C7AB305001A8565 /* WorkoutListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutListCell.swift; sourceTree = "<group>"; };
-		12CEA9172C7ABE0400256006 /* SettingsOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsOptions.swift; sourceTree = "<group>"; };
 		12CEA9212C7AE27F00256006 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		12CEA9232C7AE3CD00256006 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		12CEA9262C7AE6BF00256006 /* ExerciseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailViewController.swift; sourceTree = "<group>"; };
 		12CEA9292C7B165D00256006 /* Notes.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Notes.txt; sourceTree = "<group>"; };
 		12CEA92C2C7B274C00256006 /* NewListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewListViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +123,11 @@
 		12CEA93A2C7C787B00256006 /* OrganizedWorkouts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = OrganizedWorkouts.json; sourceTree = "<group>"; };
 		12CEA93C2C7C7CFB00256006 /* OrganizeViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizeViewModal.swift; sourceTree = "<group>"; };
 		12CEA93E2C7C7D6400256006 /* OrganizeWorkoutsModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizeWorkoutsModal.swift; sourceTree = "<group>"; };
+		12CEA9412C7C896800256006 /* WorkoutDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDetailViewController.swift; sourceTree = "<group>"; };
+		12CEA9452C7CA59C00256006 /* WorkoutDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDetailView.swift; sourceTree = "<group>"; };
+		12CEA9472C7CB12900256006 /* Settings.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Settings.json; sourceTree = "<group>"; };
+		12CEA9492C7CB33400256006 /* SettingsModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModal.swift; sourceTree = "<group>"; };
+		12CEA94B2C7CB39700256006 /* SettingsViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -196,6 +203,7 @@
 				126AEA0B2C79A846001A8565 /* Onboarding */,
 				126AE9FB2C79A3A8001A8565 /* Sets */,
 				12CEA9342C7C63D400256006 /* Organize */,
+				12CEA9442C7CA54200256006 /* OrganizedWorkoutDetail */,
 				126AE9FC2C79A3AD001A8565 /* Sessions */,
 				126AE9FD2C79A3B3001A8565 /* Today */,
 				126AEA3A2C79F5FA001A8565 /* Settings */,
@@ -350,6 +358,7 @@
 				126AEA262C79CB5F001A8565 /* ExerciseLists.json */,
 				126AEA432C7A0C7A001A8565 /* ListTemplates.json */,
 				12CEA93A2C7C787B00256006 /* OrganizedWorkouts.json */,
+				12CEA9472C7CB12900256006 /* Settings.json */,
 			);
 			path = JSON;
 			sourceTree = "<group>";
@@ -358,8 +367,8 @@
 			isa = PBXGroup;
 			children = (
 				12CEA9212C7AE27F00256006 /* SettingsViewController.swift */,
-				12CEA9232C7AE3CD00256006 /* SettingsView.swift */,
-				12CEA9172C7ABE0400256006 /* SettingsOptions.swift */,
+				12CEA94B2C7CB39700256006 /* SettingsViewModal.swift */,
+				12CEA9492C7CB33400256006 /* SettingsModal.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -425,6 +434,15 @@
 				12CEA93E2C7C7D6400256006 /* OrganizeWorkoutsModal.swift */,
 			);
 			path = Organize;
+			sourceTree = "<group>";
+		};
+		12CEA9442C7CA54200256006 /* OrganizedWorkoutDetail */ = {
+			isa = PBXGroup;
+			children = (
+				12CEA9412C7C896800256006 /* WorkoutDetailViewController.swift */,
+				12CEA9452C7CA59C00256006 /* WorkoutDetailView.swift */,
+			);
+			path = OrganizedWorkoutDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -547,6 +565,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12CEA94D2C7CB43100256006 /* Settings.json in Resources */,
 				12CEA9402C7C7DB000256006 /* OrganizedWorkouts.json in Resources */,
 				126AEA472C7A0FF3001A8565 /* ListTemplates.json in Resources */,
 				126AEA402C79FA90001A8565 /* ExerciseLists.json in Resources */,
@@ -577,17 +596,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				12CEA9372C7C63EF00256006 /* OrganizeViewController.swift in Sources */,
+				12CEA9462C7CA59C00256006 /* WorkoutDetailView.swift in Sources */,
 				126AEA0F2C79A887001A8565 /* SGViewController.swift in Sources */,
 				126AEA0D2C79A854001A8565 /* WelcomeViewController.swift in Sources */,
+				12CEA9422C7C896800256006 /* WorkoutDetailViewController.swift in Sources */,
 				126AEA2A2C79D40A001A8565 /* ExerciseListModal.swift in Sources */,
 				126AEA1B2C79AE14001A8565 /* UIView+Ext.swift in Sources */,
 				126AEA1D2C79B311001A8565 /* WelcomeViewItem.swift in Sources */,
+				12CEA9482C7CB12900256006 /* Settings.json in Sources */,
 				126AEA242C79C370001A8565 /* ExerciseListsCell.swift in Sources */,
 				126AEA4C2C7A243F001A8565 /* TemplateDetailViewController.swift in Sources */,
 				12CEA9332C7B58EE00256006 /* OngoingSessionView.swift in Sources */,
 				126AEA182C79ACF4001A8565 /* Localization.swift in Sources */,
 				12CEA9272C7AE6BF00256006 /* ExerciseDetailViewController.swift in Sources */,
-				12CEA9182C7ABE0400256006 /* SettingsOptions.swift in Sources */,
+				12CEA94A2C7CB33400256006 /* SettingsModal.swift in Sources */,
 				126AEA152C79AAE0001A8565 /* SGButton.swift in Sources */,
 				126AEA112C79A92B001A8565 /* SGTitleLabel.swift in Sources */,
 				126AEA2C2C79D73F001A8565 /* ListTemplatesCell.swift in Sources */,
@@ -605,7 +627,6 @@
 				126AEA422C7A04D6001A8565 /* SetsViewModal.swift in Sources */,
 				126AEA222C79B697001A8565 /* WelcomeView.swift in Sources */,
 				126AEA012C79A3ED001A8565 /* SessionViewController.swift in Sources */,
-				12CEA9242C7AE3CD00256006 /* SettingsView.swift in Sources */,
 				12CEA9312C7B4F7700256006 /* SessionLeftBarButtonItemOptions.swift in Sources */,
 				126AEA4E2C7AB305001A8565 /* WorkoutListCell.swift in Sources */,
 				126AEA1F2C79B3D6001A8565 /* SGImageView.swift in Sources */,
@@ -614,6 +635,7 @@
 				126AEA462C7A0DBE001A8565 /* ListTemplateModal.swift in Sources */,
 				12CEA93B2C7C787B00256006 /* OrganizedWorkouts.json in Sources */,
 				12CEA9392C7C679200256006 /* OrganizeTableView.swift in Sources */,
+				12CEA94C2C7CB39700256006 /* SettingsViewModal.swift in Sources */,
 				126AEA442C7A0C7A001A8565 /* ListTemplates.json in Sources */,
 				12CEA93D2C7C7CFB00256006 /* OrganizeViewModal.swift in Sources */,
 				126AEA3F2C79F89A001A8565 /* NetworkManager.swift in Sources */,

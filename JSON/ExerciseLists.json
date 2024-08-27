@@ -5,6 +5,7 @@
             "title": "New List...",
             "desc": "",
             "rightBarButton": "",
+            "accessoryType": false,
             "workouts": []
         },
         {
@@ -12,6 +13,7 @@
             "title": "My Exercises",
             "desc": "",
             "rightBarButton": "arrow.up.arrow.down",
+            "accessoryType": true,
             "workouts": [
                 {
                     "exercise": "Leg Extension",
@@ -90,6 +92,7 @@
             "title": "Arnold's Golden Six",
             "desc": "Arnold's Golden Six is a classis, full-body workout routine designed to build strenght and muscle mass using fundamental compund exercises. \n\nWeigh Increments: \nIncrease weights by 2.5-5% weekly if all reps and sets are completed with proper form. \nIf targets are not met, do not increase weight; instead, focus on achieving the target reps with the current weight. \nEvery fourth week, reduce the load by 10-15% to facilitate recovery.",
             "rightBarButton": "ellipsis.circle",
+            "accessoryType": true,
             "workouts": [
                 {
                     "exercise": "Squat",

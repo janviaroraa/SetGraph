@@ -1,0 +1,103 @@
+{
+    "sections": [
+        {
+            "items": [
+                {
+                    "image": "crown",
+                    "title": "Pro Membership",
+                    "accessoryType": true,
+                    "menu": []
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "image": "person.circle",
+                    "title": "Account",
+                    "accessoryType": true,
+                    "menu": []
+                },
+                {
+                    "image": "square.dashed.inset.filled",
+                    "title": "Smart Plates",
+                    "accessoryType": true,
+                    "menu": []
+                },
+                {
+                    "image": "scalemass",
+                    "title": "Unit",
+                    "accessoryType": false,
+                    "menu": [
+                        {
+                            "menuItem": "Imperial (lb/mi)"
+                        },
+                        {
+                            "menuItem": "Metric (kg/km)"
+                        }
+                    ]
+                },
+                {
+                    "image": "heart.text.square.fill",
+                    "title": "Integrations",
+                    "accessoryType": true,
+                    "menu": []
+                },
+                {
+                    "image": "square.2.layers.3d.top.filled",
+                    "title": "Shortcuts",
+                    "accessoryType": true,
+                    "menu": []
+                },
+                {
+                    "image": "paintpalette",
+                    "title": "Theme",
+                    "accessoryType": false,
+                    "menu": [
+                        {
+                            "menuItem": "Match Device"
+                        },
+                        {
+                            "menuItem": "Always Light"
+                        },
+                        {
+                            "menuItem": "Always Dark"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "image": "calendar",
+                    "title": "Workout Reminders",
+                    "accessoryType": true,
+                    "menu": []
+                },
+                {
+                    "image": "timer",
+                    "title": "Default Interset Rest",
+                    "accessoryType": true,
+                    "menu": []
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "image": "questionmark.circle",
+                    "title": "Help & Feedback",
+                    "accessoryType": true,
+                    "menu": []
+                },
+                {
+                    "image": "info.circle",
+                    "title": "Version History",
+                    "accessoryType": true,
+                    "menu": []
+                }
+            ]
+        }
+    ]
+}

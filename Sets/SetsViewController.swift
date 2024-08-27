@@ -114,7 +114,7 @@ extension SetsViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: ExerciseListsCell.identifier, for: indexPath) as? ExerciseListsCell else { fatalError() }
-        cell.configure(imageName: exerciseListData?[indexPath.row].image, title: exerciseListData?[indexPath.row].title)
+        cell.configure(imageName: exerciseListData?[indexPath.row].image, title: exerciseListData?[indexPath.row].title, shouldHaveAccessoryType: exerciseListData?[indexPath.row].accessoryType ??  false)
         return cell
     }
 }

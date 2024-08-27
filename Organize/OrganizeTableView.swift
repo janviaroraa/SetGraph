@@ -31,6 +31,8 @@ class OrganizeTableView: UITableViewCell {
     private func configureUIElements() {
         workoutImageView.layer.cornerRadius = 20
         workoutImageView.clipsToBounds = true
+
+        descLabel.numberOfLines = 4
     }
 
     private func addViews() {
