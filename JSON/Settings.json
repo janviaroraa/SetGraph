@@ -6,7 +6,47 @@
                     "image": "crown",
                     "title": "Pro Membership",
                     "accessoryType": true,
-                    "menu": []
+                    "shouldShowReminderView": false,
+                    "reminders": {
+                        "remindersImage": "",
+                        "remindersDesc": ""
+                    },
+                    "menu": [],
+                    "navigation": [
+                        {
+                            "navigationItem": [
+                                {
+                                    "navigationImage": "star",
+                                    "navigationTitle": "Benefits",
+                                    "navigationDesc": "",
+                                    "accessoryType": false,
+                                    "tintColor": ".systemYellow"
+                                },
+                                {
+                                    "navigationImage": "arrow.clockwise",
+                                    "navigationTitle": "Restore Membership",
+                                    "navigationDesc": "",
+                                    "accessoryType": false,
+                                    "tintColor": ""
+                                }
+                            ],
+                            "header": "",
+                            "footer": "A Lifetime Pro Membership can be purchased once without a subscription. A Pro Membership may also available with a monthly or yearly subscription. Setgraph will automatically charge your iTunes Account at the end of your subscription or free trial period unless auto-renew is turned off at least 24 hours before the end of your current period. You can turn off auto-renew at any time and still receive full functionality until the end of your current period, but no refund can be provided for unused portions of the subscription. Subscriptions cannot be shared using Family Sharing."
+                        },
+                        {
+                            "navigationItem": [
+                                {
+                                    "navigationImage": "cart",
+                                    "navigationTitle": "Manage Subscriptions",
+                                    "navigationDesc": "",
+                                    "accessoryType": false,
+                                    "tintColor": ""
+                                }
+                            ],
+                            "header": "",
+                            "footer": "Tap here to manage your subscriptions. Auto-renewal may be turned off after purchase."
+                        }
+                    ]
                 }
             ]
         },
@@ -16,18 +56,123 @@
                     "image": "person.circle",
                     "title": "Account",
                     "accessoryType": true,
-                    "menu": []
+                    "shouldShowReminderView": false,
+                    "reminders": {
+                        "remindersImage": "",
+                        "remindersDesc": ""
+                    },
+                    "menu": [],
+                    "navigation": [
+                        {
+                            "navigationItem": [
+                                {
+                                    "navigationImage": "person.circle",
+                                    "navigationTitle": "Janvi Arora",
+                                    "navigationDesc": "jjanvi.arora18@gmail.com",
+                                    "accessoryType": false,
+                                    "tintColor": ""
+                                }
+                            ],
+                            "header": "",
+                            "footer": ""
+                        },
+                        {
+                            "navigationItem": [
+                                {
+                                    "navigationImage": "",
+                                    "navigationTitle": "Update Username",
+                                    "navigationDesc": "",
+                                    "accessoryType": true,
+                                    "tintColor": ""
+                                },
+                                {
+                                    "navigationImage": "",
+                                    "navigationTitle": "Update Profile Image",
+                                    "navigationDesc": "",
+                                    "accessoryType": false,
+                                    "tintColor": ""
+                                }
+                            ],
+                            "header": "",
+                            "footer": ""
+                        },
+                        {
+                            "navigationItem": [
+                                {
+                                    "navigationImage": "",
+                                    "navigationTitle": "Manage Account",
+                                    "navigationDesc": "",
+                                    "accessoryType": true,
+                                    "tintColor": ""
+                                }
+                            ],
+                            "header": "",
+                            "footer": ""
+                        }
+                    ]
                 },
                 {
                     "image": "square.dashed.inset.filled",
                     "title": "Smart Plates",
                     "accessoryType": true,
-                    "menu": []
+                    "shouldShowReminderView": false,
+                    "reminders": {
+                        "remindersImage": "",
+                        "remindersDesc": ""
+                    },
+                    "menu": [],
+                    "navigation": [
+                        {
+                            "navigationItem": [
+                                {
+                                    "navigationImage": "",
+                                    "navigationTitle": "Gym (Default)",
+                                    "navigationDesc": "",
+                                    "accessoryType": false,
+                                    "tintColor": ""
+                                },
+                                {
+                                    "navigationImage": "",
+                                    "navigationTitle": "New...",
+                                    "navigationDesc": "",
+                                    "accessoryType": false,
+                                    "tintColor": ""
+                                }
+                            ],
+                            "header": "PLATE SETUPS",
+                            "footer": "By adding your own setup, Smart plates will take into account the plate units available at your location"
+                        },
+                        {
+                            "navigationItem": [
+                                {
+                                    "navigationImage": "",
+                                    "navigationTitle": "Barbell",
+                                    "navigationDesc": "",
+                                    "accessoryType": false,
+                                    "tintColor": ""
+                                },
+                                {
+                                    "navigationImage": "",
+                                    "navigationTitle": "New...",
+                                    "navigationDesc": "",
+                                    "accessoryType": false,
+                                    "tintColor": ""
+                                }
+                            ],
+                            "header": "STARTING WEIGHTS",
+                            "footer": ""
+                        }
+                    ]
                 },
                 {
                     "image": "scalemass",
                     "title": "Unit",
                     "accessoryType": false,
+                    "shouldShowReminderView": false,
+                    "reminders": {
+                        "remindersImage": "",
+                        "remindersDesc": ""
+                    },
                     "menu": [
                         {
                             "menuItem": "Imperial (lb/mi)"
@@ -35,24 +180,151 @@
                         {
                             "menuItem": "Metric (kg/km)"
                         }
+                    ],
+                    "navigation": [
+                        {
+                            "navigationItem": [
+                                {
+                                    "navigationImage": "",
+                                    "navigationTitle": "",
+                                    "navigationDesc": "",
+                                    "accessoryType": false,
+                                    "tintColor": ""
+                                }
+                            ],
+                            "header": "",
+                            "footer": ""
+                        }
                     ]
                 },
                 {
                     "image": "heart.text.square.fill",
                     "title": "Integrations",
                     "accessoryType": true,
-                    "menu": []
+                    "shouldShowReminderView": false,
+                    "reminders": {
+                        "remindersImage": "",
+                        "remindersDesc": ""
+                    },
+                    "menu": [],
+                    "navigation": [
+                        {
+                            "navigationItem": [
+                                {
+                                    "navigationImage": "applewatch",
+                                    "navigationTitle": "Sync to Apple Watch",
+                                    "navigationDesc": "",
+                                    "accessoryType": false,
+                                    "tintColor": ""
+                                }
+                            ],
+                            "header": "APPLE WATCH",
+                            "footer": ""
+                        },
+                        {
+                            "navigationItem": [
+                                {
+                                    "navigationImage": "arrow.clockwise.heart.fill",
+                                    "navigationTitle": "Sync to Apple Watch",
+                                    "navigationDesc": "",
+                                    "accessoryType": false,
+                                    "tintColor": ""
+                                }
+                            ],
+                            "header": "HEALTH & FITNESS",
+                            "footer": "Allow access to sync SetGrapg with your Apple Health & Apple Fitness apps."
+                        }
+                    ]
                 },
                 {
                     "image": "square.2.layers.3d.top.filled",
                     "title": "Shortcuts",
                     "accessoryType": true,
-                    "menu": []
+                    "shouldShowReminderView": false,
+                    "reminders": {
+                        "remindersImage": "",
+                        "remindersDesc": ""
+                    },
+                    "menu": [],
+                    "navigation": [
+                        {
+                            "navigationItem": [
+                                {
+                                    "navigationImage": "",
+                                    "navigationTitle": "Create Exercise",
+                                    "navigationDesc": "This lets you create an exercise by giving it a name.",
+                                    "accessoryType": false,
+                                    "tintColor": ""
+                                },
+                                {
+                                    "navigationImage": "",
+                                    "navigationTitle": "Record Set",
+                                    "navigationDesc": "This lets you log a set by providing the details.",
+                                    "accessoryType": false,
+                                    "tintColor": ""
+                                },
+                                {
+                                    "navigationImage": "",
+                                    "navigationTitle": "Exercise",
+                                    "navigationDesc": "This lets you select an exercise. Use this when you want to use an exercise multiple times in a shortcut.",
+                                    "accessoryType": false,
+                                    "tintColor": ""
+                                }
+                            ],
+                            "header": "ACTION OVERVIEW",
+                            "footer": "These actions are avaible for Setgraph when creating a shortcut"
+                        },
+                        {
+                            "navigationItem": [
+                                {
+                                    "navigationImage": "point.3.filled.connected.trianglepath.dotted",
+                                    "navigationTitle": "Trio Superset",
+                                    "navigationDesc": "This shortcuts records a Sit-Ups, Push Ups, and Pull-up set. The set can be adjusted before running the shortcut.",
+                                    "accessoryType": false,
+                                    "tintColor": ""
+                                },
+                                {
+                                    "navigationImage": "chevron.down.circle.fill",
+                                    "navigationTitle": "",
+                                    "navigationDesc": "Select your exercises after adding the shortcut.",
+                                    "accessoryType": false,
+                                    "tintColor": ""
+                                }
+                            ],
+                            "header": "SUPERSET EXAMPLE",
+                            "footer": "Tip: If you find yourself creating many shortcuts, consider creating shortcut folders to stay organized."
+                        },
+                        {
+                            "navigationItem": [
+                                {
+                                    "navigationImage": "",
+                                    "navigationTitle": "Squat Dropset",
+                                    "navigationDesc": "Records two Squat sets. The set details can be adjusted before running the shortcut.",
+                                    "accessoryType": false,
+                                    "tintColor": ""
+                                },
+                                {
+                                    "navigationImage": "",
+                                    "navigationTitle": "",
+                                    "navigationDesc": "Select your Dropset exercise after adding the shortcut.",
+                                    "accessoryType": false,
+                                    "tintColor": ""
+                                }
+                            ],
+                            "header": "DROPSET EXAMPLE",
+                            "footer": ""
+                        }
+                    ]
                 },
                 {
                     "image": "paintpalette",
                     "title": "Theme",
                     "accessoryType": false,
+                    "shouldShowReminderView": false,
+                    "reminders": {
+                        "remindersImage": "",
+                        "remindersDesc": ""
+                    },
                     "menu": [
                         {
                             "menuItem": "Match Device"
@@ -62,6 +334,21 @@
                         },
                         {
                             "menuItem": "Always Dark"
+                        }
+                    ],
+                    "navigation": [
+                        {
+                            "navigationItem": [
+                                {
+                                    "navigationImage": "",
+                                    "navigationTitle": "",
+                                    "navigationDesc": "",
+                                    "accessoryType": false,
+                                    "tintColor": ""
+                                }
+                            ],
+                            "header": "",
+                            "footer": ""
                         }
                     ]
                 }
@@ -73,13 +360,100 @@
                     "image": "calendar",
                     "title": "Workout Reminders",
                     "accessoryType": true,
-                    "menu": []
+                    "shouldShowReminderView": true,
+                    "reminders": {
+                        "remindersImage": "calendar.badge.clock",
+                        "remindersDesc": "Muscle growth slows down after long periods of inactivity. \n\n Get a notification when it's been too long since your last workout."
+                    },
+                    "menu": [],
+                    "navigation": [
+                        {
+                            "navigationItem": [
+                                {
+                                    "navigationImage": "",
+                                    "navigationTitle": "Remind After",
+                                    "navigationDesc": "",
+                                    "accessoryType": false,
+                                    "tintColor": ""
+                                }
+                            ],
+                            "header": "",
+                            "footer": ""
+                        }
+                    ]
                 },
                 {
                     "image": "timer",
                     "title": "Default Interset Rest",
                     "accessoryType": true,
-                    "menu": []
+                    "shouldShowReminderView": false,
+                    "reminders": {
+                        "remindersImage": "",
+                        "remindersDesc": ""
+                    },
+                    "menu": [],
+                    "navigation": [
+                        {
+                            "navigationItem": [
+                                {
+                                    "navigationImage": "timer",
+                                    "navigationTitle": "Timer",
+                                    "navigationDesc": "",
+                                    "accessoryType": false,
+                                    "tintColor": ""
+                                }
+                            ],
+                            "header": "",
+                            "footer": ""
+                        },
+                        {
+                            "navigationItem": [
+                                {
+                                    "navigationImage": "",
+                                    "navigationTitle": "Minutes",
+                                    "navigationDesc": "",
+                                    "accessoryType": false,
+                                    "tintColor": ""
+                                },
+                                {
+                                    "navigationImage": "",
+                                    "navigationTitle": "Seconds",
+                                    "navigationDesc": "",
+                                    "accessoryType": false,
+                                    "tintColor": ""
+                                }
+                            ],
+                            "header": "",
+                            "footer": "Select the Interset rest duration you'd like to use the majority of the time."
+                        },
+                        {
+                            "navigationItem": [
+                                {
+                                    "navigationImage": "",
+                                    "navigationTitle": "Time Efficient",
+                                    "navigationDesc": "More sets, less joints stress",
+                                    "accessoryType": false,
+                                    "tintColor": ""
+                                },
+                                {
+                                    "navigationImage": "",
+                                    "navigationTitle": "Build Muscle",
+                                    "navigationDesc": "Get toned/bigger",
+                                    "accessoryType": false,
+                                    "tintColor": ""
+                                },
+                                {
+                                    "navigationImage": "",
+                                    "navigationTitle": "Increase Strength",
+                                    "navigationDesc": "Maximize muscular power",
+                                    "accessoryType": false,
+                                    "tintColor": ""
+                                }
+                            ],
+                            "header": "DEFAULT RECOMMENDATIONS",
+                            "footer": ""
+                        }
+                    ]
                 }
             ]
         },
@@ -89,13 +463,242 @@
                     "image": "questionmark.circle",
                     "title": "Help & Feedback",
                     "accessoryType": true,
-                    "menu": []
+                    "shouldShowReminderView": false,
+                    "reminders": {
+                        "remindersImage": "",
+                        "remindersDesc": ""
+                    },
+                    "menu": [],
+                    "navigation": [
+                        {
+                            "navigationItem": [
+                                {
+                                    "navigationImage": "",
+                                    "navigationTitle": "",
+                                    "navigationDesc": "",
+                                    "accessoryType": false,
+                                    "tintColor": ""
+                                }
+                            ],
+                            "header": "",
+                            "footer": ""
+                        }
+                    ]
                 },
                 {
                     "image": "info.circle",
                     "title": "Version History",
                     "accessoryType": true,
-                    "menu": []
+                    "shouldShowReminderView": false,
+                    "reminders": {
+                        "remindersImage": "",
+                        "remindersDesc": ""
+                    },
+                    "menu": [],
+                    "navigation": [
+                        {
+                            "navigationItem": [
+                                {
+                                    "navigationImage": "",
+                                    "navigationTitle": "9.40 \n\nGraph Interaction Upgrades \n\nThe current date is now highlighted when you select a set. Scrolling is enabled making it easier to compare past sessions. \n\nFilter Ranges \nFilter for a specific rep/weight range in your set history graph. \n\nList Templates \nAdd pre-made workout templates to your library.",
+                                    "navigationDesc": "",
+                                    "accessoryType": false,
+                                    "tintColor": ""
+                                },
+                                {
+                                    "navigationImage": "",
+                                    "navigationTitle": "9.30 \n\nFaster Navigation \nSwitch seamlessly between Set Tracking, Sessions, and Workout Summaries. This allows you to easily reference a previous workout while recording your current one. \n\nMore Context \nWhen viewing the set history of an exercise, tap on the date to see which other exercises you performed that day. This can help understand how they may have influenced your performance. \n\nAuto 1RM Update \nWhen recording a 1RM set, you now have the option to simultaneously update the 1RM.",
+                                    "navigationDesc": "",
+                                    "accessoryType": false,
+                                    "tintColor": ""
+                                },
+                                {
+                                    "navigationImage": "",
+                                    "navigationTitle": "9.20 \n\nCalendar \nEffortlessly select your past summaries using a full calendar, which also allows for monitoring consistency over time. \n\nSwipe Between Weeks \nEasily access and compare summaries by swiping between weeks, with each swipe taking you to the same day of the week in the next or previous week. \n\nDiscover List Structures \nExplore common list strategies to optimize your tracking setup.",
+                                    "navigationDesc": "",
+                                    "accessoryType": false,
+                                    "tintColor": ""
+                                },
+                                {
+                                    "navigationImage": "",
+                                    "navigationTitle": "9.10 \n\nIn the latest update, manage your live sessions straight from your Lock Screen and Dynamic Island, and swiftly return to the app with a simple tap on your ongoing activity. You can also access this session management functionality through the Shortcuts app. \n\nEnhance your timing precision by adjusting seconds during manual session addition/editing. \nGain more control with the new 'Cancel' button for the rest timer, accessible from both your Lock Screen and Dynamic Island. \nExperience a more streamlined exercise organization by selecting and assigning exercises to a folder immediately upon its creation. \n\nWe've also fixed some bugs and made optimizations. \n\nPlease reach out to us at support@setgraph.app if you need assistance or have any feedback to share.",
+                                    "navigationDesc": "",
+                                    "accessoryType": false,
+                                    "tintColor": ""
+                                },
+                                {
+                                    "navigationImage": "",
+                                    "navigationTitle": "9.00 \n\nWe're introducing Expanded Workouts with Enhanced Sessions. Say goodbye to 'Cardio' and hello to \n\n'Sessions', with over 70 activity types for iPhone and Apple Watch. This update broadens your tracking capabilities, spanning from team sports to outdoor activities, allowing you to document your continuous improvement across a wider variety of activities. \n\nEnjoy Detailed Customization with our Session Editing features. Customize your workout records by adding custom metrics, values, and notes through our \n\n'Custom Details' feature. You also have the power to adjust session duration and log past sessions. \n\nWe've updated the Summary section to include \n'Sessions' and their total duration, offering an informative glance at your progress. \nExperience our newly added Heads Up Display (HUD) that provides an improved user experience, complementing our existing display with session and rest timer information. \n\nWe're excited for you to experience these new features and enhancements. As always, we appreciate your feedback and support.",
+                                    "navigationDesc": "",
+                                    "accessoryType": false,
+                                    "tintColor": ""
+                                },
+                                {
+                                    "navigationImage": "",
+                                    "navigationTitle": "8.40 \n\nWe are thrilled to introduce a new feature in our latest update that enhances the user experience by simplifying the process of sharing diagnostic information with our support team. \nWith this new update, submitting a support request through the app is even simpler. Our system will automatically generate a diagnostic report that includes essential information about your device and the app. This report will be attached to the request, enabling our support team to quickly locate and address any issues you may encounter. \nFurthermore, we have included folder selection when starting workouts in the watch app. This means that you can dive right into your workout, without wasting any time. \nThank you for choosing our app and for your ongoing support.",
+                                    "navigationDesc": "",
+                                    "accessoryType": false,
+                                    "tintColor": ""
+                                },
+                                {
+                                    "navigationImage": "",
+                                    "navigationTitle": "8.30 \n\nThe new Setgraph Watch update has arrived, and it's guaranteed to level up your workout experience. With our improved Apple Watch interface and Action Button, tracking your workout progress and staying on top of it has never been easier. \nIf that's not enough for you, we've also introduced our latest Shortcuts Integration feature, allowing you to build features like Supersets/Dropsets that automate your workout flow. And, to top it off, our Siri integration enables you to record your sets with ease, leaving you to focus solely on your workout. \nWe're confident that you'll enjoy these new features as they take your fitness journey to a whole new level. \nSo what are you waiting for? Give it a try and let us know what you think. As always, we're here to help you achieve your fitness goals.",
+                                    "navigationDesc": "",
+                                    "accessoryType": false,
+                                    "tintColor": ""
+                                },
+                                {
+                                    "navigationImage": "",
+                                    "navigationTitle": "8.20 \n\nExercise Specific Rest \n\nCustomize the rest time for any exercise. \n\nLock Screen Timer \nTake a glance at your lock screen to see your rest timer. Make sure to Always Allow Live Activities from Setgraph. (Available for iOS 16.2+) \n\nDynamic Island Support \nWhen you exit the app, your rest timer will appear in your dynamic island.",
+                                    "navigationDesc": "",
+                                    "accessoryType": false,
+                                    "tintColor": ""
+                                },
+                                {
+                                    "navigationImage": "",
+                                    "navigationTitle": "8.10 \n\nIntroducing Folder and Exercise Notes \n• Set targets or goals \n• List specific instructions \n• Leave useful reminders",
+                                    "navigationDesc": "",
+                                    "accessoryType": false,
+                                    "tintColor": ""
+                                },
+                                {
+                                    "navigationImage": "",
+                                    "navigationTitle": "8.01 \n\nPerformance and bug fixes to make your workout run smoothly.",
+                                    "navigationDesc": "",
+                                    "accessoryType": false,
+                                    "tintColor": ""
+                                },
+                                {
+                                    "navigationImage": "",
+                                    "navigationTitle": "8.00 \n\nManually order exercises \nYou can now position the exercises in your folders manually. Switch the sort preference of a folder any time. \n\nMulti-line Daily Charts \nCompare an exercise's daily metrics (volume, reps, etc.) all in one multi-line chart. \n\nManually Order Folders \nHold and drag any folder to your desired position. \n\nSelect 1RM Formula \nSelect the preferred formula you'd like for your estimates. \n\nPerformance improvements to make your workouts run smoothly.",
+                                    "navigationDesc": "",
+                                    "accessoryType": false,
+                                    "tintColor": ""
+                                },
+                                {
+                                    "navigationImage": "",
+                                    "navigationTitle": "7.14 \n\nPerformance and bug fixes to make your workouts run smoothly.",
+                                    "navigationDesc": "",
+                                    "accessoryType": false,
+                                    "tintColor": ""
+                                },
+                                {
+                                    "navigationImage": "",
+                                    "navigationTitle": "7.13 \n\nPerformance fixes to make your workouts run smoothly. Added new functionality to user account.",
+                                    "navigationDesc": "",
+                                    "accessoryType": false,
+                                    "tintColor": ""
+                                },
+                                {
+                                    "navigationImage": "",
+                                    "navigationTitle": "7.12 \n\nYoga and Pilates are now available as cardio workouts. \nIncludes performance improvements to make sure your workouts run smoothly and uninterrupted.",
+                                    "navigationDesc": "",
+                                    "accessoryType": false,
+                                    "tintColor": ""
+                                },
+                                {
+                                    "navigationImage": "",
+                                    "navigationTitle": "7.11 \n\nThis app has been updated by Apple to display the Apple Watch app icon. \nOptimized and ready for iOS 15.",
+                                    "navigationDesc": "",
+                                    "accessoryType": false,
+                                    "tintColor": ""
+                                },
+                                {
+                                    "navigationImage": "",
+                                    "navigationTitle": "7.10 \n\nIntroducing Feature Requests \n• Vote for app features that matter to you \n• Submit new feature requests \n• See the status of each feature request \n• Help prioritize the most important app improvements",
+                                    "navigationDesc": "",
+                                    "accessoryType": false,
+                                    "tintColor": ""
+                                },
+                                {
+                                    "navigationImage": "",
+                                    "navigationTitle": "7.02 \n\nThis version includes Ul and performance updates to make sure your workouts run smoothly and uninterrupted. Let us know how you like the new app icon!",
+                                    "navigationDesc": "",
+                                    "accessoryType": false,
+                                    "tintColor": ""
+                                },
+                                {
+                                    "navigationImage": "",
+                                    "navigationTitle": "7.01 \n\nEnjoy the new set recording screen! It is redesigned to make you log sets faster. This is minor patch to the previous version.",
+                                    "navigationDesc": "",
+                                    "accessoryType": false,
+                                    "tintColor": ""
+                                },
+                                {
+                                    "navigationImage": "",
+                                    "navigationTitle": "7.00 \n\nRecording sets is now easier and faster than ever. You can now input sets using a number pad. This version comes with additional Ul and performance fixes to make sure your workouts run smoothly.",
+                                    "navigationDesc": "",
+                                    "accessoryType": false,
+                                    "tintColor": ""
+                                },
+                                {
+                                    "navigationImage": "",
+                                    "navigationTitle": "6.10 \n\nCurrent Exercise Session vs Last \nCompare your current session with your previous session (for any exercise) \n\nLifetime Pro Membership \nNow available \n\nBug and performance fixes to make your workouts run smoothly.",
+                                    "navigationDesc": "",
+                                    "accessoryType": false,
+                                    "tintColor": ""
+                                },
+                                {
+                                    "navigationImage": "",
+                                    "navigationTitle": "6.01 \n\nEnhancements \n• Bug and performance fixes to make your workouts run smoothly.",
+                                    "navigationDesc": "",
+                                    "accessoryType": false,
+                                    "tintColor": ""
+                                },
+                                {
+                                    "navigationImage": "",
+                                    "navigationTitle": "6.00 \n\nEnhancements \n• Improved Ul \n• Ability to edit a set's date and time \n• Swipe right on an exercise to quickly record a set \n• Swipe right on a set to repeat it \n\nStarting Weights \nCreate starting weights and assign them to exercises that use them (ex. Barbell) \n\nAnnouncements \nFacebook sign-in is no longer supported for leaderboards. If you signed in with Facebook before, to sign-in again, tap forgot password to reset your password.",
+                                    "navigationDesc": "",
+                                    "accessoryType": false,
+                                    "tintColor": ""
+                                },
+                                {
+                                    "navigationImage": "",
+                                    "navigationTitle": "5.22 \n\nMinor enhancements \n• Finishing workout sessions now requires confirmation \n• Workout reminders take into account cardio workouts \n• Fixed metric and imperial labels \n• Improved watch app Ul \n\n• Updated Ul for new devices \n\nStability improvements to make your workouts run smoothly.",
+                                    "navigationDesc": "",
+                                    "accessoryType": false,
+                                    "tintColor": ""
+                                },
+                                {
+                                    "navigationImage": "",
+                                    "navigationTitle": "5.21 \n\nCardio \nRecord walking and jump rope workouts \nStability improvements to make your workouts run smoothly.",
+                                    "navigationDesc": "",
+                                    "accessoryType": false,
+                                    "tintColor": ""
+                                },
+                                {
+                                    "navigationImage": "",
+                                    "navigationTitle": "5.20 \n\nCardio \nRecord your running, rowing, stair stepper, elliptical, and cycling workouts. \n\nExercise Search \nA new search bar allows you to search for exercises faster.",
+                                    "navigationDesc": "",
+                                    "accessoryType": false,
+                                    "tintColor": ""
+                                },
+                                {
+                                    "navigationImage": "",
+                                    "navigationTitle": "5.21 \n\nCardio \nRecord walking and jump rope workouts \n\nStability improvements to make your workouts run smoothly.",
+                                    "navigationDesc": "",
+                                    "accessoryType": false,
+                                    "tintColor": ""
+                                },
+                                {
+                                    "navigationImage": "",
+                                    "navigationTitle": "5.20 \n\nCardio \nRecord your running, rowing, stair stepper, elliptical, and cycling workouts. \n\nExercise Search \nA new search bar allows you to search for exercises faster.",
+                                    "navigationDesc": "",
+                                    "accessoryType": false,
+                                    "tintColor": ""
+                                },
+                                {
+                                    "navigationImage": "",
+                                    "navigationTitle": "5.10 \n\nDark/Light Mode Support \nChoose your appearance in the settings \n\nDynamic Text \nSome text will adapt to your preference \nUI Improvements will make the app feel great for new and existing users. \nBug and stability improvements will ensure a smooth workout!",
+                                    "navigationDesc": "",
+                                    "accessoryType": false,
+                                    "tintColor": ""
+                                }
+                            ],
+                            "header": "",
+                            "footer": ""
+                        }
+                    ]
                 }
             ]
         }

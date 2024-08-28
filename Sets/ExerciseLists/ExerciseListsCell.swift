@@ -17,12 +17,20 @@ class ExerciseListsCell: UITableViewCell {
     private let itemImage = SGImageView()
     private let itemAccessoryTypeButton = SGButton()
     private let itemTitle = SGTitleLabel(textColor: .white, fontSize: 16, textAlignment: .left)
+    private let itemDesc = SGBodyLabel(textColor: .systemGray, textAlignment: .left)
+
+    private lazy var stackView: UIStackView = {
+        let stk = UIStackView()
+        stk.translatesAutoresizingMaskIntoConstraints = false
+        stk.axis = .vertical
+        stk.spacing = 4
+        return stk
+    }()
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         backgroundColor = .secondarySystemBackground
-        addViews()
-        layoutConstraints()
+        configureUIElements()
         itemAccessoryTypeButton.isHidden = true
     }
     
@@ -30,35 +38,62 @@ class ExerciseListsCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
 
-    private func addViews() {
-        contentView.addSubviews(itemImage, itemTitle, itemAccessoryTypeButton)
+    private func configureUIElements() {
+        itemTitle.numberOfLines = 0
+        itemDesc.numberOfLines = 0
     }
 
-    private func layoutConstraints() {
+    private func addViews(withImageView: Bool) {
+        if withImageView {
+            contentView.addSubview(itemImage)
+        }
+        contentView.addSubviews(stackView, itemAccessoryTypeButton)
+        stackView.addArrangedSubview(itemTitle)
+        stackView.addArrangedSubview(itemDesc)
+    }
+
+    private func layoutConstraints(withImageView: Bool) {
+        if withImageView {
+            NSLayoutConstraint.activate([
+                itemImage.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10),
+                itemImage.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20),
+                itemImage.widthAnchor.constraint(equalToConstant: 24),
+                itemImage.heightAnchor.constraint(equalToConstant: 26),
+
+                stackView.leadingAnchor.constraint(equalTo: itemImage.trailingAnchor, constant: 20),
+                stackView.widthAnchor.constraint(equalToConstant: contentView.frame.width - 100),
+            ])
+        } else {
+            NSLayoutConstraint.activate([
+                stackView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20),
+                stackView.widthAnchor.constraint(equalToConstant: contentView.frame.width - 100),
+            ])
+        }
+
         NSLayoutConstraint.activate([
-            itemImage.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
-            itemImage.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20),
-            itemImage.widthAnchor.constraint(equalToConstant: 30),
-            itemImage.heightAnchor.constraint(equalToConstant: 30),
-
-            itemTitle.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
-            itemTitle.leadingAnchor.constraint(equalTo: itemImage.trailingAnchor, constant: 20),
-            itemTitle.trailingAnchor.constraint(equalTo: itemAccessoryTypeButton.leadingAnchor, constant: -20),
-
-            itemAccessoryTypeButton.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
-            itemAccessoryTypeButton.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -5),
-            itemAccessoryTypeButton.heightAnchor.constraint(equalToConstant: 14),
+            stackView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10),
+            stackView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -10),
+            stackView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -10)
         ])
     }
 
-    func configure(imageName: String?, title: String?, shouldHaveAccessoryType: Bool) {
+    func configure(imageName: String?, title: String?, desc: String? = nil, shouldHaveAccessoryType: Bool) {
         itemImage.tintColor = .systemGreen
         itemImage.image = UIImage(systemName: imageName ?? "")
         itemTitle.text = title
+        itemDesc.text = desc
         if shouldHaveAccessoryType {
             accessoryType = .disclosureIndicator
         }
         self.shouldHaveAccessoryType = shouldHaveAccessoryType
+
+        if let imageName, !imageName.isEmpty {
+            addViews(withImageView: true)
+            layoutConstraints(withImageView: true)
+        } else {
+            addViews(withImageView: false)
+            layoutConstraints(withImageView: false)
+        }
     }
 
     func setTintColor(tintColor: UIColor) {
@@ -76,6 +111,15 @@ class ExerciseListsCell: UITableViewCell {
         itemAccessoryTypeButton.configuration?.imagePadding = 6
         itemAccessoryTypeButton.isUserInteractionEnabled = true
         itemAccessoryTypeButton.addTarget(self, action: #selector(handleMenuTap), for: .touchUpInside)
+
+        NSLayoutConstraint.activate([
+            stackView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10),
+            stackView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -10),
+
+            itemAccessoryTypeButton.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
+            itemAccessoryTypeButton.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -5),
+            itemAccessoryTypeButton.heightAnchor.constraint(equalToConstant: 14),
+        ])
 
         self.menuList = menuList
     }

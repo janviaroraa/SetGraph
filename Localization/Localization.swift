@@ -67,4 +67,7 @@ enum Localized {
 
     // Workout Deatil
     static let addToList = "Add to Lists"
+
+    // Settings
+    static let settings = "Settings"
 }

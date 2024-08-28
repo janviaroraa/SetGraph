@@ -100,7 +100,7 @@ class SetsViewController: SGViewController {
 
     @objc
     private func settingsButtonTap() {
-        let vc = SettingsViewController()
+        let vc = SettingsViewController(title: Localized.settings)
         let navVC = UINavigationController(rootViewController: vc)
         present(navVC, animated: true)
     }

@@ -24,9 +24,17 @@ class SettingsViewController: SGViewController {
         return tv
     }()
 
+    init(title: String?) {
+        super.init(nibName: nil, bundle: nil)
+        self.title = title
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Settings"
         registerViewModal()
         viewModal?.fetchSettingsSections()
     }
@@ -93,6 +101,15 @@ extension SettingsViewController: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+
+        let shouldHaveAccessoryType = sections[indexPath.section].items?[indexPath.row].accessoryType ?? false
+        let shouldShowWorkoutReminderView = sections[indexPath.section].items?[indexPath.row].shouldShowReminderView ?? false
+        let reminder = sections[indexPath.section].items?[indexPath.row].reminders
+
+        guard shouldHaveAccessoryType else { return }
+        let selectedCell = sections[indexPath.section].items?[indexPath.row]
+        let vc = SettingsDetailViewController(title: selectedCell?.title ?? "", sectionIndex: indexPath.section, rowIndex: indexPath.row, reminder: reminder, shouldShowWorkoutReminderView: shouldShowWorkoutReminderView)
+        navigationController?.pushViewController(vc, animated: true)
     }
 
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
