@@ -60,6 +60,7 @@
 		12CEA94D2C7CB43100256006 /* Settings.json in Resources */ = {isa = PBXBuildFile; fileRef = 12CEA9472C7CB12900256006 /* Settings.json */; };
 		12CEA95A2C7DC75100256006 /* SettingsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CEA9592C7DC75100256006 /* SettingsDetailViewController.swift */; };
 		12CEA95C2C7DFE9F00256006 /* WorkoutReminderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CEA95B2C7DFE9F00256006 /* WorkoutReminderView.swift */; };
+		12CEA95F2C7F24CE00256006 /* DefaultIntersetRestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CEA95E2C7F24CE00256006 /* DefaultIntersetRestView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -132,6 +133,7 @@
 		12CEA94B2C7CB39700256006 /* SettingsViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModal.swift; sourceTree = "<group>"; };
 		12CEA9592C7DC75100256006 /* SettingsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsDetailViewController.swift; sourceTree = "<group>"; };
 		12CEA95B2C7DFE9F00256006 /* WorkoutReminderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutReminderView.swift; sourceTree = "<group>"; };
+		12CEA95E2C7F24CE00256006 /* DefaultIntersetRestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultIntersetRestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -375,6 +377,7 @@
 				12CEA94B2C7CB39700256006 /* SettingsViewModal.swift */,
 				12CEA9492C7CB33400256006 /* SettingsModal.swift */,
 				12CEA95B2C7DFE9F00256006 /* WorkoutReminderView.swift */,
+				12CEA95E2C7F24CE00256006 /* DefaultIntersetRestView.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -605,6 +608,7 @@
 				12CEA9462C7CA59C00256006 /* WorkoutDetailView.swift in Sources */,
 				126AEA0F2C79A887001A8565 /* SGViewController.swift in Sources */,
 				126AEA0D2C79A854001A8565 /* WelcomeViewController.swift in Sources */,
+				12CEA95F2C7F24CE00256006 /* DefaultIntersetRestView.swift in Sources */,
 				12CEA9422C7C896800256006 /* WorkoutDetailViewController.swift in Sources */,
 				126AEA2A2C79D40A001A8565 /* ExerciseListModal.swift in Sources */,
 				126AEA1B2C79AE14001A8565 /* UIView+Ext.swift in Sources */,

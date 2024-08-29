@@ -20,6 +20,7 @@ struct SettingsSectionItems: Codable {
     let title: String?
     let accessoryType: Bool?
     let shouldShowReminderView: Bool?
+    let shouldShowIntersetRestView: Bool?
     let reminders: Reminder?
     let menu: [MenuItem]?
     let navigation: [SettingsNavigation]?

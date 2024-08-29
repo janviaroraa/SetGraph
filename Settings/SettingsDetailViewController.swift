@@ -14,6 +14,7 @@ class SettingsDetailViewController: SGViewController {
     private var sectionIndex: Int = 0
     private var rowIndex: Int = 0
     private var shouldShowWorkoutReminderView: Bool?
+    private var shouldShowIntersetRestView = true
     private var reminder: Reminder?
 
     private let workoutReminderView = WorkoutReminderView()
@@ -26,6 +27,7 @@ class SettingsDetailViewController: SGViewController {
         tv.dataSource = self
         tv.delegate = self
         tv.register(ExerciseListsCell.self, forCellReuseIdentifier: ExerciseListsCell.identifier)
+        tv.register(DefaultIntersetRestView.self, forCellReuseIdentifier: DefaultIntersetRestView.identifier)
         tv.estimatedRowHeight = 44
         tv.rowHeight = UITableView.automaticDimension
         return tv
@@ -62,7 +64,7 @@ class SettingsDetailViewController: SGViewController {
     }
 
     override func addViews() {
-        if shouldShowWorkoutReminderView ?? false { setWorkoutReminderView() }
+        if shouldShowWorkoutReminderView ?? false { view.addSubview(workoutReminderView) }
         view.addSubviews(tableView)
     }
 
@@ -102,24 +104,40 @@ class SettingsDetailViewController: SGViewController {
 extension SettingsDetailViewController: UITableViewDataSource {
 
     func numberOfSections(in tableView: UITableView) -> Int {
-        sections[sectionIndex].items?[rowIndex].navigation?.count ?? 0
+        var sections = sections[sectionIndex].items?[rowIndex].navigation?.count ?? 0
+        if shouldShowIntersetRestView {
+            sections += 1
+        }
+        return sections
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        sections[sectionIndex].items?[rowIndex].navigation?[section].navigationItem?.count ?? 0
+        let sectionCount = sections[sectionIndex].items?[rowIndex].navigation?.count ?? 0
+
+        if shouldShowIntersetRestView && section == sectionCount {
+            return 1
+        } else {
+            return sections[sectionIndex].items?[rowIndex].navigation?[section].navigationItem?.count ?? 0
+        }
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: ExerciseListsCell.identifier, for: indexPath) as? ExerciseListsCell else { fatalError() }
+        let sectionCount = sections[sectionIndex].items?[rowIndex].navigation?.count ?? 0
 
-        let imageName = sections[sectionIndex].items?[rowIndex].navigation?[indexPath.section].navigationItem?[indexPath.row].navigationImage
-        let title = sections[sectionIndex].items?[rowIndex].navigation?[indexPath.section].navigationItem?[indexPath.row].navigationTitle
-        let desc = sections[sectionIndex].items?[rowIndex].navigation?[indexPath.section].navigationItem?[indexPath.row].navigationDesc
-        let shouldHaveAccessoryType = sections[sectionIndex].items?[rowIndex].navigation?[indexPath.section].navigationItem?[indexPath.row].accessoryType ?? false
+        if shouldShowIntersetRestView && indexPath.section == sectionCount {
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: DefaultIntersetRestView.identifier, for: indexPath) as? DefaultIntersetRestView else { fatalError() }
+            return cell
+        } else {
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: ExerciseListsCell.identifier, for: indexPath) as? ExerciseListsCell else { fatalError() }
 
-        cell.configure(imageName: imageName, title: title, desc: desc, shouldHaveAccessoryType: shouldHaveAccessoryType)
+            let imageName = sections[sectionIndex].items?[rowIndex].navigation?[indexPath.section].navigationItem?[indexPath.row].navigationImage
+            let title = sections[sectionIndex].items?[rowIndex].navigation?[indexPath.section].navigationItem?[indexPath.row].navigationTitle
+            let desc = sections[sectionIndex].items?[rowIndex].navigation?[indexPath.section].navigationItem?[indexPath.row].navigationDesc
+            let shouldHaveAccessoryType = sections[sectionIndex].items?[rowIndex].navigation?[indexPath.section].navigationItem?[indexPath.row].accessoryType ?? false
 
-        return cell
+            cell.configure(imageName: imageName, title: title, desc: desc, shouldHaveAccessoryType: shouldHaveAccessoryType)
+            return cell
+        }
     }
 }
 
@@ -146,13 +164,25 @@ extension SettingsDetailViewController: UITableViewDelegate {
     }
 
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let headerText = sections[sectionIndex].items?[rowIndex].navigation?[section].header
-        return headerFooterView(text: headerText)
+        let sectionCount = sections[sectionIndex].items?[rowIndex].navigation?.count ?? 0
+
+        if shouldShowIntersetRestView && section == sectionCount {
+            return headerFooterView(text: nil)
+        } else {
+            let headerText = sections[sectionIndex].items?[rowIndex].navigation?[section].header
+            return headerFooterView(text: headerText)
+        }
     }
 
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-        let footerText = sections[sectionIndex].items?[rowIndex].navigation?[section].footer
-        return headerFooterView(text: footerText)
+        let sectionCount = sections[sectionIndex].items?[rowIndex].navigation?.count ?? 0
+
+        if shouldShowIntersetRestView && section == sectionCount {
+            return headerFooterView(text: nil)
+        } else {
+            let footerText = sections[sectionIndex].items?[rowIndex].navigation?[section].footer
+            return headerFooterView(text: footerText)
+        }
     }
 
     func headerFooterView(text: String?) -> UIView? {

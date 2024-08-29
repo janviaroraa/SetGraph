@@ -6,6 +6,7 @@
                     "image": "crown",
                     "title": "Pro Membership",
                     "accessoryType": true,
+                    "shouldShowIntersetRestView": false,
                     "shouldShowReminderView": false,
                     "reminders": {
                         "remindersImage": "",
@@ -56,6 +57,7 @@
                     "image": "person.circle",
                     "title": "Account",
                     "accessoryType": true,
+                    "shouldShowIntersetRestView": false,
                     "shouldShowReminderView": false,
                     "reminders": {
                         "remindersImage": "",
@@ -115,6 +117,7 @@
                     "image": "square.dashed.inset.filled",
                     "title": "Smart Plates",
                     "accessoryType": true,
+                    "shouldShowIntersetRestView": false,
                     "shouldShowReminderView": false,
                     "reminders": {
                         "remindersImage": "",
@@ -168,6 +171,7 @@
                     "image": "scalemass",
                     "title": "Unit",
                     "accessoryType": false,
+                    "shouldShowIntersetRestView": false,
                     "shouldShowReminderView": false,
                     "reminders": {
                         "remindersImage": "",
@@ -201,6 +205,7 @@
                     "image": "heart.text.square.fill",
                     "title": "Integrations",
                     "accessoryType": true,
+                    "shouldShowIntersetRestView": false,
                     "shouldShowReminderView": false,
                     "reminders": {
                         "remindersImage": "",
@@ -240,6 +245,7 @@
                     "image": "square.2.layers.3d.top.filled",
                     "title": "Shortcuts",
                     "accessoryType": true,
+                    "shouldShowIntersetRestView": false,
                     "shouldShowReminderView": false,
                     "reminders": {
                         "remindersImage": "",
@@ -320,6 +326,7 @@
                     "image": "paintpalette",
                     "title": "Theme",
                     "accessoryType": false,
+                    "shouldShowIntersetRestView": false,
                     "shouldShowReminderView": false,
                     "reminders": {
                         "remindersImage": "",
@@ -360,6 +367,7 @@
                     "image": "calendar",
                     "title": "Workout Reminders",
                     "accessoryType": true,
+                    "shouldShowIntersetRestView": false,
                     "shouldShowReminderView": true,
                     "reminders": {
                         "remindersImage": "calendar.badge.clock",
@@ -386,6 +394,7 @@
                     "image": "timer",
                     "title": "Default Interset Rest",
                     "accessoryType": true,
+                    "shouldShowIntersetRestView": true,
                     "shouldShowReminderView": false,
                     "reminders": {
                         "remindersImage": "",
@@ -463,6 +472,7 @@
                     "image": "questionmark.circle",
                     "title": "Help & Feedback",
                     "accessoryType": true,
+                    "shouldShowIntersetRestView": false,
                     "shouldShowReminderView": false,
                     "reminders": {
                         "remindersImage": "",
@@ -489,6 +499,7 @@
                     "image": "info.circle",
                     "title": "Version History",
                     "accessoryType": true,
+                    "shouldShowIntersetRestView": false,
                     "shouldShowReminderView": false,
                     "reminders": {
                         "remindersImage": "",
